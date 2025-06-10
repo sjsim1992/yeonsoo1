@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+
+    <link rel="stylesheet" href="../assets/css/reservation.css">
+</head>
+
+    <body>
+
+        <div class="wrap">
+            <header>
+                <div class="logo"><img src="../assets/images/logo.png"></div>
+                <ul class="gnb">
+                    <li class="active"><a href="">연수캘린더</a></li>
+                    <li><a href="">공지사항</a></li>
+                </ul>
+            </header>
+
+            <div class="container">
+                <div class="lnbWrap">
+                    <div class="pageTitle">숙소 예약하기</div>
+                    <ul class="location">
+                        <li>home</li>
+                        <li>연수캘린더</li>
+                        <li>숙소 예약하기</li>
+                    </ul>
+                </div>
+
+                
+                
+                
+                <!-- contents 안에 각 컨텐츠가 들어감 ! -->
+                <div class="contents">
+
+                    <table class="leftTBL">
+                        <colgroup>
+                            <col style="width:150px;">
+                            <col>
+                            <col style="width:150px;">
+                            <col>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th>연수 명</th>
+                                <td>2025학년도 중등 교직원 연수</td>
+                                <th>구분</th>
+                                <td>원내</td>
+                            </tr>
+                            <tr>
+                                <th>연수 일정</th>
+                                <td>2025-04-01 ~ 2025-04-02</td>
+                                <th>연수 인원</th>
+                                <td>100명</td>
+                            </tr>
+                            <tr>
+                                <th>숙소</th>
+                                <td>
+                                    <span class="roomNm">해오름관 215호</span>
+                                    <span>(1인 1실)</span>
+                                    <a href="#" class="btn_cancle_small">예약취소</a>
+                                </td>
+                                <th>셔틀버스</th>
+                                <td>입소 / 퇴소</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="topBox">
+                        <div class="selectArea">
+                            <div>
+                                <div class="leftTit">숙박 일자</div>
+                                <div class="rightCo">
+                                    <span class="date">2025-04-01 ~ 2025-04-02</span>
+                                    <span class="">1인 1실</span>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="beomrye">
+                            <li><div class="label bj_notYet"></div><div class="exp">예약가능</div></li>
+                            <li><div class="label bj_finish"></div><div class="exp">예약완료</div></li>
+                            <li><div class="label bj_mine"></div><div class="exp">나의예약</div></li>
+                        </ul>
+                    </div>
+
+
+                    <table class="basicTBL bjTBL_usr radioORcheck">
+                        <!--
+                            * 관리자
+                            배정관리 : bjTBL_admin, radioORcheck  
+                            배정현황 : bjTBL_admin_view
+
+                            * 연수생
+                            예약하기 : bjTBL_usr, radioORcheck  
+                            예약확인 : bjTBL_usr_view
+                        -->
+                        <thead>
+                            <tr>
+                                <th>건물명</th>
+                                <th>층</th>
+                                <th colspan="20">호수</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th rowspan="4">해오름관</th>
+                                <th>2층</th>
+
+                                <td class="bj_disAble"><span class="no">201</span></td>
+                                <td class="bj_disAble"><span class="no">202</span></td>
+                                <td class="bj_disAble"><span class="no">203</span></td>
+                                <td class="bj_disAble"><span class="no">204</span></td>
+                                <td class="bj_disAble"><span class="no">205</span></td>
+                                <td class="bj_disAble"><span class="no">206</span></td>
+                                <td class="bj_disAble"><span class="no">207</span></td>
+                                <td class="bj_disAble"><span class="no">208</span></td>
+
+                                <td class="bj_finish"><span class="no">209</span><div class="stt">예약완료</div></td>
+                                <td class="bj_notYet"><span class="no">210</span>
+                                    <input type="radio" name="test00" id="test02">
+                                    <label for="test02"></label>
+                                </td>
+                                <td class="bj_finish"><span class="no">211</span><div class="stt">예약완료</div></td>
+                                <td class="bj_finish"><span class="no">212</span><div class="stt">예약완료</div></td>
+                                <td class="bj_finish"><span class="no">213</span><div class="stt">예약완료</div></td>
+                                <td class="bj_finish"><span class="no">214</span><div class="stt">예약완료</div></td>
+                                <td class="bj_notYet"><span class="no">215</span>
+                                    <input type="radio" name="test00" id="test07" checked/>
+                                    <label for="test07"></label>
+                                </td>
+                                <td class="bj_notYet"><span class="no">216</span>
+                                    <input type="radio" name="test00" id="test08">
+                                    <label for="test08"></label>
+                                </td>
+                                <td class="bj_notYet"><span class="no">217</span>
+                                    <input type="radio" name="test00" id="test09">
+                                    <label for="test09"></label>
+                                </td>
+                                <td class="bj_notYet"><span class="no">218</span>
+                                    <input type="radio" name="test00" id="test10">
+                                    <label for="test10"></label>
+                                </td>
+
+                                <td class="bj_disAble"><span class="no">219</span></td>
+                                <td class="bj_disAble"><span class="no">220</span></td>
+                            </tr>
+
+                            <tr>
+                                <th>3층</th>
+
+                                <td class="bj_disAble"><span class="no">301</span></td>
+                                <td class="bj_disAble"><span class="no">302</span></td>
+                                <td class="bj_disAble"><span class="no">303</span></td>
+                                <td class="bj_disAble"><span class="no">304</span></td>
+                                <td class="bj_disAble"><span class="no">305</span></td>
+                                <td class="bj_disAble"><span class="no">306</span></td>
+                                <td class="bj_disAble"><span class="no">307</span></td>
+                                <td class="bj_disAble"><span class="no">308</span></td>
+                                <td class="bj_disAble"><span class="no">309</span></td>
+                                <td class="bj_disAble"><span class="no">310</span></td>
+
+                                <td class="bj_finish"><span class="no">311</span><div class="stt">예약완료</div></td>
+                                <td class="bj_notYet"><span class="no">312</span>
+                                    <input type="radio" name="test00" id="test14">
+                                    <label for="test14"></label>
+                                </td>
+                                <td class="bj_finish"><span class="no">313</span><div class="stt">예약완료</div></td>
+                                <td class="bj_finish"><span class="no">314</span><div class="stt">예약완료</div></td>
+                                <td class="bj_finish"><span class="no">315</span><div class="stt">예약완료</div></td>
+                                <td class="bj_finish"><span class="no">316</span><div class="stt">예약완료</div></td>
+                                <td class="bj_finish"><span class="no">317</span><div class="stt">예약완료</div></td>
+                                <td class="bj_finish"><span class="no">318</span><div class="stt">예약완료</div></td>
+                                <td class="bj_notYet"><span class="no">319</span>
+                                    <input type="radio" name="test00" id="test21">
+                                    <label for="test21"></label>
+                                </td>
+                                <td class="bj_notYet"><span class="no">320</span>
+                                    <input type="radio" name="test00" id="test22">
+                                    <label for="test22"></label>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th>4층</th>
+
+                                <td class="bj_notYet"><span class="no">401</span>
+                                    <input type="radio" name="test00" id="test23">
+                                    <label for="test23"></label>
+                                </td>
+                                <td class="bj_notYet"><span class="no">402</span>
+                                    <input type="radio" name="test00" id="test24">
+                                    <label for="test24"></label>
+                                </td>
+                                <td class="bj_notYet"><span class="no">403</span>
+                                    <input type="radio" name="test00" id="test25">
+                                    <label for="test25"></label>
+                                </td>
+                                <td class="bj_notYet"><span class="no">404</span>
+                                    <input type="radio" name="test00" id="test26">
+                                    <label for="test26"></label>
+                                </td>
+                                <td class="bj_notYet"><span class="no">405</span>
+                                    <input type="radio" name="test00" id="test27">
+                                    <label for="test27"></label>
+                                </td>
+                                <td class="bj_notYet"><span class="no">406</span>
+                                    <input type="radio" name="test00" id="test28">
+                                    <label for="test28"></label>
+                                </td>
+                                <td class="bj_notYet"><span class="no">407</span>
+                                    <input type="radio" name="test00" id="test29">
+                                    <label for="test29"></label>
+                                </td>
+                                <td class="bj_notYet"><span class="no">408</span>
+                                    <input type="radio" name="test00" id="test30">
+                                    <label for="test30"></label>
+                                </td>
+                                <td class="bj_notYet"><span class="no">409</span>
+                                    <input type="radio" name="test00" id="test31">
+                                    <label for="test31"></label>
+                                </td>
+                                <td class="bj_notYet"><span class="no">410</span>
+                                    <input type="radio" name="test00" id="test32">
+                                    <label for="test32"></label>
+                                </td>
+                                <td class="bj_notYet"><span class="no">411</span>
+                                    <input type="radio" name="test00" id="test33">
+                                    <label for="test33"></label>
+                                </td>
+                                <td class="bj_notYet"><span class="no">412</span>
+                                    <input type="radio" name="test00" id="test34">
+                                    <label for="test34"></label>
+                                </td>
+                                <td class="bj_notYet"><span class="no">413</span>
+                                    <input type="radio" name="test00" id="test35">
+                                    <label for="test35"></label>
+                                </td>
+                                <td class="bj_notYet"><span class="no">414</span>
+                                    <input type="radio" name="test00" id="test36">
+                                    <label for="test36"></label>
+                                </td>
+                                <td class="bj_notYet"><span class="no">415</span>
+                                    <input type="radio" name="test00" id="test37">
+                                    <label for="test37"></label>
+                                </td>
+                                <td class="bj_notYet"><span class="no">416</span>
+                                    <input type="radio" name="test00" id="test38">
+                                    <label for="test38"></label>
+                                </td>
+                                <td class="bj_notYet"><span class="no">417</span>
+                                    <input type="radio" name="test00" id="test39">
+                                    <label for="test39"></label>
+                                </td>
+                                <td class="bj_notYet"><span class="no">418</span>
+                                    <input type="radio" name="test00" id="test40">
+                                    <label for="test40"></label>
+                                </td>
+                                <td class="bj_notYet"><span class="no">419</span>
+                                    <input type="radio" name="test00" id="test41">
+                                    <label for="test41"></label>
+                                </td>
+                                <td class="bj_notYet"><span class="no">420</span>
+                                    <input type="radio" name="test00" id="test42">
+                                    <label for="test42"></label>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th>5층</th>
+                                <td class="bj_disAble"><span class="no">501</span></td>
+                                <td class="bj_disAble"><span class="no">502</span></td>
+                                <td class="bj_disAble"><span class="no">503</span></td>
+                                <td class="bj_disAble"><span class="no">504</span></td>
+                                <td class="bj_disAble"><span class="no">505</span></td>
+                                <td class="bj_disAble"><span class="no">506</span></td>
+                                <td class="bj_disAble"><span class="no">507</span></td>
+                                <td class="bj_disAble"><span class="no">508</span></td>
+                                <td class="bj_disAble"><span class="no">509</span></td>
+                                <td class="bj_disAble"><span class="no">510</span></td>
+                                <td class="bj_disAble"><span class="no">511</span></td>
+                                <td class="bj_disAble"><span class="no">512</span></td>
+                                <td class="bj_disAble"><span class="no">513</span></td>
+                                <td class="bj_disAble"><span class="no">514</span></td>
+                                <td class="bj_disAble"><span class="no">515</span></td>
+                                <td class="bj_disAble"><span class="no">516</span></td>
+                                <td class="bj_disAble"><span class="no">517</span></td>
+                                <td class="bj_disAble"><span class="no">518</span></td>
+                                <td class="bj_disAble"><span class="no">519</span></td>
+                                <td class="bj_disAble"><span class="no">520</span></td>
+                            </tr>
+
+
+
+
+                            <tr>
+                                <th rowspan="4">달맞이관</th>
+                                <th>2층</th>
+
+                                <td class="bj_disAble"><span class="no">201</span></td>
+                                <td class="bj_disAble"><span class="no">202</span></td>
+                                <td class="bj_disAble"><span class="no">203</span></td>
+                                <td class="bj_disAble"><span class="no">204</span></td>
+                                <td class="bj_disAble"><span class="no">205</span></td>
+                                <td class="bj_disAble"><span class="no">206</span></td>
+                                <td class="bj_disAble"><span class="no">207</span></td>
+                                <td class="bj_disAble"><span class="no">208</span></td>
+                                <td class="bj_disAble"><span class="no">209</span></td>
+                                <td class="bj_disAble"><span class="no">210</span></td>
+
+                                <td class="bj_notYet"><span class="no">211</span>
+                                    <input type="radio" name="test00" id="test51">
+                                    <label for="test51"></label>
+                                </td>
+                                <td class="bj_notYet"><span class="no">212</span>
+                                    <input type="radio" name="test00" id="test52">
+                                    <label for="test52"></label>
+                                </td>
+                                <td class="bj_notYet"><span class="no">213</span>
+                                    <input type="radio" name="test00" id="test53">
+                                    <label for="test53"></label>
+                                </td>
+                                <td class="bj_notYet"><span class="no">214</span>
+                                    <input type="radio" name="test00" id="test54">
+                                    <label for="test54"></label>
+                                </td>
+                                <td class="bj_notYet"><span class="no">215</span>
+                                    <input type="radio" name="test00" id="test55">
+                                    <label for="test55"></label>
+                                </td>
+                                <td class="bj_notYet"><span class="no">216</span>
+                                    <input type="radio" name="test00" id="test56">
+                                    <label for="test56"></label>
+                                </td>
+                                <td class="bj_notYet"><span class="no">217</span>
+                                    <input type="radio" name="test00" id="test57">
+                                    <label for="test57"></label>
+                                </td>
+                                <td class="bj_notYet"><span class="no">218</span>
+                                    <input type="radio" name="test00" id="test58">
+                                    <label for="test58"></label>
+                                </td>
+
+                                <td class="bj_disAble"><span class="no">219</span></td>
+                                <td class="bj_disAble"><span class="no">220</span></td>
+                            </tr>
+
+                            <tr>
+                                <th>3층</th>
+
+                                <td class="bj_disAble"><span class="no">301</span></td>
+                                <td class="bj_disAble"><span class="no">302</span></td>
+                                <td class="bj_disAble"><span class="no">303</span></td>
+                                <td class="bj_disAble"><span class="no">304</span></td>
+                                <td class="bj_disAble"><span class="no">305</span></td>
+                                <td class="bj_disAble"><span class="no">306</span></td>
+                                <td class="bj_disAble"><span class="no">307</span></td>
+                                <td class="bj_disAble"><span class="no">308</span></td>
+                                <td class="bj_disAble"><span class="no">309</span></td>
+                                <td class="bj_disAble"><span class="no">310</span></td>
+
+                                <td class="bj_notYet"><span class="no">311</span>
+                                    <input type="radio" name="guiwzForm667" id="guiwzForm22">
+                                    <label for="guiwzForm22"></label>
+                                </td>
+                                <td class="bj_notYet"><span class="no">312</span>
+                                    <input type="radio" name="test00" id="test61">
+                                    <label for="test61"></label>
+                                </td>
+                                <td class="bj_notYet"><span class="no">313</span>
+                                    <input type="radio" name="test00" id="test62">
+                                    <label for="test62"></label>
+                                </td>
+                                <td class="bj_notYet"><span class="no">314</span>
+                                    <input type="radio" name="test00" id="test63">
+                                    <label for="test63"></label>
+                                </td>
+                                <td class="bj_notYet"><span class="no">315</span>
+                                    <input type="radio" name="test00" id="test64">
+                                    <label for="test64"></label>
+                                </td>
+                                <td class="bj_notYet"><span class="no">316</span>
+                                    <input type="radio" name="test00" id="test65">
+                                    <label for="test65"></label>
+                                </td>
+                                <td class="bj_notYet"><span class="no">317</span>
+                                    <input type="radio" name="test00" id="test66">
+                                    <label for="test66"></label>
+                                </td>
+                                <td class="bj_notYet"><span class="no">318</span>
+                                    <input type="radio" name="test00" id="test67">
+                                    <label for="test67"></label>
+                                </td>
+                                <td class="bj_notYet"><span class="no">319</span>
+                                    <input type="radio" name="test00" id="test68">
+                                    <label for="test68"></label>
+                                </td>
+                                <td class="bj_notYet"><span class="no">320</span>
+                                    <input type="radio" name="test00" id="test69">
+                                    <label for="test69"></label>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th>4층</th>
+
+                                <td class="bj_notYet"><span class="no">401</span>
+                                    <input type="radio" name="test00" id="test70">
+                                    <label for="test70"></label>
+                                </td>
+                                <td class="bj_notYet"><span class="no">402</span>
+                                    <input type="radio" name="test00" id="test71">
+                                    <label for="test71"></label>
+                                </td>
+                                <td class="bj_notYet"><span class="no">403</span>
+                                    <input type="radio" name="test00" id="test72">
+                                    <label for="test72"></label>
+                                </td>
+                                <td class="bj_notYet"><span class="no">404</span>
+                                    <input type="radio" name="test00" id="test73">
+                                    <label for="test73"></label>
+                                </td>
+                                <td class="bj_notYet"><span class="no">405</span>
+                                    <input type="radio" name="test00" id="test74">
+                                    <label for="test74"></label>
+                                </td>
+                                <td class="bj_notYet"><span class="no">406</span>
+                                    <input type="radio" name="test00" id="test75">
+                                    <label for="test75"></label>
+                                </td>
+                                <td class="bj_finish"><span class="no">407</span><div class="stt">예약완료</div></td>
+                                <td class="bj_finish"><span class="no">408</span><div class="stt">예약완료</div></td>
+                                <td class="bj_finish"><span class="no">409</span><div class="stt">예약완료</div></td>
+                                <td class="bj_finish"><span class="no">410</span><div class="stt">예약완료</div></td>
+                                <td class="bj_finish"><span class="no">411</span><div class="stt">예약완료</div></td>
+                                <td class="bj_finish"><span class="no">412</span><div class="stt">예약완료</div></td>
+                                <td class="bj_finish"><span class="no">413</span><div class="stt">예약완료</div></td>
+                                <td class="bj_finish"><span class="no">414</span><div class="stt">예약완료</div></td>
+                                <td class="bj_finish"><span class="no">415</span><div class="stt">예약완료</div></td>
+                                <td class="bj_finish"><span class="no">416</span><div class="stt">예약완료</div></td>
+                                <td class="bj_finish"><span class="no">417</span><div class="stt">예약완료</div></td>
+                                <td class="bj_finish"><span class="no">418</span><div class="stt">예약완료</div></td>
+                                <td class="bj_finish"><span class="no">419</span><div class="stt">예약완료</div></td>
+                                <td class="bj_finish"><span class="no">420</span><div class="stt">예약완료</div></td>
+                            </tr>
+
+                            <tr>
+                                <th>5층</th>
+                                <td class="bj_disAble"><span class="no">501</span></td>
+                                <td class="bj_disAble"><span class="no">502</span></td>
+                                <td class="bj_disAble"><span class="no">503</span></td>
+                                <td class="bj_disAble"><span class="no">504</span></td>
+                                <td class="bj_disAble"><span class="no">505</span></td>
+                                <td class="bj_disAble"><span class="no">506</span></td>
+                                <td class="bj_disAble"><span class="no">507</span></td>
+                                <td class="bj_disAble"><span class="no">508</span></td>
+                                <td class="bj_disAble"><span class="no">509</span></td>
+                                <td class="bj_disAble"><span class="no">510</span></td>
+                                <td class="bj_disAble"><span class="no">511</span></td>
+                                <td class="bj_disAble"><span class="no">512</span></td>
+                                <td class="bj_disAble"><span class="no">513</span></td>
+                                <td class="bj_disAble"><span class="no">514</span></td>
+                                <td class="bj_disAble"><span class="no">515</span></td>
+                                <td class="bj_disAble"><span class="no">516</span></td>
+                                <td class="bj_disAble"><span class="no">517</span></td>
+                                <td class="bj_disAble"><span class="no">518</span></td>
+                                <td class="bj_disAble"><span class="no">519</span></td>
+                                <td class="bj_disAble"><span class="no">520</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="txt-r mt30">
+                        <a href="../pages/03_5_예약,취소 POPUP.html" class="btn_save">예약하기</a>
+                        <a href="#" class="btn_basic">목록</a>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+                <!-- //contents END -->
+            </div>
+            <!-- //container END -->
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+    
+
+    <script type="text/javascript" src="../assets/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="../assets/js/script.js"></script>
+    </body>
+</html>
