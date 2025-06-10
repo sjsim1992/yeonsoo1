@@ -49,8 +49,8 @@
                 <div class="contents">
 
                     <div class="tabBoxWrap">
-                        <button type="button"><div>숙소 배정 관리</div></button>
-                        <button type="button" class="active"><div>숙소 예약 현황</div></button>
+                        <button type="button" onclick="location.href='03_1_숙소배정관리.html' "><div>숙소 배정 관리</div></button>
+                        <button type="button" class="active" onclick="location.href='03_2_숙소예약현황.html' "><div>숙소 예약 현황</div></button>
                     </div>
 
                     <div class="topBox">
@@ -74,7 +74,16 @@
                     </div>
 
 
-                    <table class="basicTBL bjTBL_view radioORcheck"> 
+                    <table class="basicTBL bjTBL_admin_view">  
+                        <!--
+                            * 관리자
+                            배정관리 : bjTBL_admin, radioORcheck  
+                            배정현황 : bjTBL_admin_view
+
+                            * 연수생
+                            예약하기 : bjTBL_usr, radioORcheck  
+                            예약확인 : bjTBL_usr_view
+                        -->
                         <thead>
                             <tr>
                                 <th>건물명</th>
@@ -96,16 +105,16 @@
                                 <td class="bj_disAble"><span class="no">207</span></td>
                                 <td class="bj_disAble"><span class="no">208</span></td>
 
-                                <td class="bj_finish"><span class="no">209</span><div class="staute"></div></td>
-                                <td class="bj_finish"><span class="no">210</span></td>
-                                <td class="bj_finish"><span class="no">211</span></td>
-                                <td class="bj_finish"><span class="no">212</span></td>
-                                <td class="bj_finish"><span class="no">213</span></td>
-                                <td class="bj_finish"><span class="no">214</span></td>
-                                <td class="bj_finish"><span class="no">215</span></td>
-                                <td class="bj_finish"><span class="no">216</span></td>
-                                <td class="bj_finish"><span class="no">217</span></td>
-                                <td class="bj_finish"><span class="no">218</span></td>
+                                <td class="bj_finish"><span class="no">209</span><div class="stt">배정예약</div></td>
+                                <td class="bj_finish"><span class="no">210</span><div class="stt">배정예약</div></td>
+                                <td class="bj_finish"><span class="no">211</span><div class="stt">배정예약</div></td>
+                                <td class="bj_finish"><span class="no">212</span><div class="stt">배정예약</div></td>
+                                <td class="bj_finish"><span class="no">213</span><div class="stt">배정예약</div></td>
+                                <td class="bj_finish"><span class="no">214</span><div class="stt">배정예약</div></td>
+                                <td class="bj_finish"><span class="no">215</span><div class="stt">배정예약</div></td>
+                                <td class="bj_finish"><span class="no">216</span><div class="stt">배정예약</div></td>
+                                <td class="bj_finish"><span class="no">217</span><div class="stt">배정예약</div></td>
+                                <td class="bj_finish"><span class="no">218</span><div class="stt">배정예약</div></td>
 
                                 <td class="bj_notYet"><span class="no">219</span></td>
                                 <td class="bj_notYet"><span class="no">220</span></td>
@@ -125,41 +134,41 @@
                                 <td class="bj_disAble"><span class="no">309</span></td>
                                 <td class="bj_disAble"><span class="no">310</span></td>
 
-                                <td class="bj_finish"><span class="no">311</span></td>
-                                <td class="bj_finish"><span class="no">312</span></td>
-                                <td class="bj_finish"><span class="no">313</span></td>
-                                <td class="bj_finish"><span class="no">314</span></td>
-                                <td class="bj_finish"><span class="no">315</span></td>
-                                <td class="bj_finish"><span class="no">316</span></td>
-                                <td class="bj_finish"><span class="no">317</span></td>
-                                <td class="bj_finish"><span class="no">318</span></td>
-                                <td class="bj_finish"><span class="no">319</span></td>
-                                <td class="bj_finish"><span class="no">320</span></td>
+                                <td class="bj_finish"><span class="no">311</span><div class="stt">배정예약</div></td>
+                                <td class="bj_finish"><span class="no">312</span><div class="stt">배정예약</div></td>
+                                <td class="bj_finish"><span class="no">313</span><div class="stt">배정예약</div></td>
+                                <td class="bj_finish"><span class="no">314</span><div class="stt">배정예약</div></td>
+                                <td class="bj_finish"><span class="no">315</span><div class="stt">배정예약</div></td>
+                                <td class="bj_finish"><span class="no">316</span><div class="stt">배정예약</div></td>
+                                <td class="bj_finish"><span class="no">317</span><div class="stt">배정예약</div></td>
+                                <td class="bj_finish"><span class="no">318</span><div class="stt">배정예약</div></td>
+                                <td class="bj_finish"><span class="no">319</span><div class="stt">배정예약</div></td>
+                                <td class="bj_finish"><span class="no">320</span><div class="stt">배정예약</div></td>
                             </tr>
 
                             <tr>
                                 <th>4층</th>
 
-                                <td class="bj_finish"><span class="no">401</span></td>
-                                <td class="bj_finish"><span class="no">402</span></td>
-                                <td class="bj_finish"><span class="no">403</span></td>
-                                <td class="bj_finish"><span class="no">404</span></td>
-                                <td class="bj_finish"><span class="no">405</span></td>
-                                <td class="bj_finish"><span class="no">406</span></td>
-                                <td class="bj_finish"><span class="no">407</span></td>
-                                <td class="bj_finish"><span class="no">408</span></td>
-                                <td class="bj_finish"><span class="no">409</span></td>
-                                <td class="bj_finish"><span class="no">410</span></td>
-                                <td class="bj_finish"><span class="no">411</span></td>
-                                <td class="bj_finish"><span class="no">412</span></td>
-                                <td class="bj_finish"><span class="no">413</span></td>
-                                <td class="bj_finish"><span class="no">414</span></td>
-                                <td class="bj_finish"><span class="no">415</span></td>
-                                <td class="bj_finish"><span class="no">416</span></td>
-                                <td class="bj_finish"><span class="no">417</span></td>
-                                <td class="bj_finish"><span class="no">418</span></td>
-                                <td class="bj_finish"><span class="no">419</span></td>
-                                <td class="bj_finish"><span class="no">420</span></td>
+                                <td class="bj_finish"><span class="no">401</span><div class="stt">배정예약</div></td>
+                                <td class="bj_finish"><span class="no">402</span><div class="stt">배정예약</div></td>
+                                <td class="bj_finish"><span class="no">403</span><div class="stt">배정예약</div></td>
+                                <td class="bj_finish"><span class="no">404</span><div class="stt">배정예약</div></td>
+                                <td class="bj_finish"><span class="no">405</span><div class="stt">배정예약</div></td>
+                                <td class="bj_finish"><span class="no">406</span><div class="stt">배정예약</div></td>
+                                <td class="bj_finish"><span class="no">407</span><div class="stt">배정예약</div></td>
+                                <td class="bj_finish"><span class="no">408</span><div class="stt">배정예약</div></td>
+                                <td class="bj_finish"><span class="no">409</span><div class="stt">배정예약</div></td>
+                                <td class="bj_finish"><span class="no">410</span><div class="stt">배정예약</div></td>
+                                <td class="bj_finish"><span class="no">411</span><div class="stt">배정예약</div></td>
+                                <td class="bj_finish"><span class="no">412</span><div class="stt">배정예약</div></td>
+                                <td class="bj_finish"><span class="no">413</span><div class="stt">배정예약</div></td>
+                                <td class="bj_finish"><span class="no">414</span><div class="stt">배정예약</div></td>
+                                <td class="bj_finish"><span class="no">415</span><div class="stt">배정예약</div></td>
+                                <td class="bj_finish"><span class="no">416</span><div class="stt">배정예약</div></td>
+                                <td class="bj_finish"><span class="no">417</span><div class="stt">배정예약</div></td>
+                                <td class="bj_finish"><span class="no">418</span><div class="stt">배정예약</div></td>
+                                <td class="bj_finish"><span class="no">419</span><div class="stt">배정예약</div></td>
+                                <td class="bj_finish"><span class="no">420</span><div class="stt">배정예약</div></td>
                             </tr>
 
                             <tr>
@@ -205,11 +214,11 @@
                                 <td class="bj_disAble"><span class="no">209</span></td>
                                 <td class="bj_disAble"><span class="no">210</span></td>
 
-                                <td class="bj_male"><span class="no">211</span></td>
+                                <td class="bj_male finish"><span class="no">211</span><div class="stt name">홍길동</div><div class="stt name">홍길동</div></td>
                                 <td class="bj_male"><span class="no">212</span></td>
-                                <td class="bj_male"><span class="no">213</span></td>
-                                <td class="bj_male"><span class="no">214</span></td>
-                                <td class="bj_male"><span class="no">215</span></td>
+                                <td class="bj_male finish"><span class="no">213</span><div class="stt name">홍길동</div><div class="stt name">홍길동</div></td>
+                                <td class="bj_male finish"><span class="no">214</span><div class="stt name">홍길동</div><div class="stt name">홍길동</div></td>
+                                <td class="bj_male finish"><span class="no">215</span><div class="stt name">홍길동</div><div class="stt name">홍길동</div></td>
                                 <td class="bj_male"><span class="no">216</span></td>
                                 <td class="bj_male"><span class="no">217</span></td>
                                 <td class="bj_male"><span class="no">218</span></td>
@@ -232,14 +241,14 @@
                                 <td class="bj_disAble"><span class="no">309</span></td>
                                 <td class="bj_disAble"><span class="no">310</span></td>
 
-                                <td class="bj_female"><span class="no">311</span></td>
-                                <td class="bj_female"><span class="no">312</span></td>
-                                <td class="bj_female"><span class="no">313</span></td>
-                                <td class="bj_female"><span class="no">314</span></td>
-                                <td class="bj_female"><span class="no">315</span></td>
-                                <td class="bj_female"><span class="no">316</span></td>
-                                <td class="bj_female"><span class="no">317</span></td>
-                                <td class="bj_female"><span class="no">318</span></td>
+                                <td class="bj_female finish"><span class="no">311</span><div class="stt name">김영숙</div><div class="stt name">김영숙</div></td>
+                                <td class="bj_female"><span class="no">312</span><div class="stt name">김영숙</div></td>
+                                <td class="bj_female finish"><span class="no">313</span><div class="stt name">김영숙</div><div class="stt name">김영숙</div></td>
+                                <td class="bj_female finish"><span class="no">314</span><div class="stt name">김영숙</div><div class="stt name">김영숙</div></td>
+                                <td class="bj_female finish"><span class="no">315</span><div class="stt name">김영숙</div><div class="stt name">김영숙</div></td>
+                                <td class="bj_female finish"><span class="no">316</span><div class="stt name">김영숙</div><div class="stt name">김영숙</div></td>
+                                <td class="bj_female"><span class="no">317</span><div class="stt name">김영숙</div></td>
+                                <td class="bj_female"><span class="no">318</span><div class="stt name">김영숙</div></td>
                                 <td class="bj_female"><span class="no">319</span></td>
                                 <td class="bj_female"><span class="no">320</span></td>
                             </tr>
@@ -247,20 +256,20 @@
                             <tr>
                                 <th>4층</th>
 
-                                <td class="bj_male"><span class="no">401</span></td>
-                                <td class="bj_male"><span class="no">402</span></td>
-                                <td class="bj_male"><span class="no">403</span></td>
-                                <td class="bj_male"><span class="no">404</span></td>
-                                <td class="bj_male"><span class="no">405</span></td>
-                                <td class="bj_male"><span class="no">406</span></td>
-                                <td class="bj_male"><span class="no">407</span></td>
-                                <td class="bj_male"><span class="no">408</span></td>
+                                <td class="bj_male finish"><span class="no">401</span><div class="stt name">홍길동</div><div class="stt name">홍길동</div></td>
+                                <td class="bj_male finish"><span class="no">402</span><div class="stt name">홍길동</div><div class="stt name">홍길동</div></td>
+                                <td class="bj_male finish"><span class="no">403</span><div class="stt name">홍길동</div><div class="stt name">홍길동</div></td>
+                                <td class="bj_male finish"><span class="no">404</span><div class="stt name">홍길동</div><div class="stt name">홍길동</div></td>
+                                <td class="bj_male finish"><span class="no">405</span><div class="stt name">홍길동</div><div class="stt name">홍길동</div></td>
+                                <td class="bj_male finish"><span class="no">406</span><div class="stt name">홍길동</div><div class="stt name">홍길동</div></td>
+                                <td class="bj_male finish"><span class="no">407</span><div class="stt name">홍길동</div><div class="stt name">홍길동</div></td>
+                                <td class="bj_male finish"><span class="no">408</span><div class="stt name">홍길동</div><div class="stt name">홍길동</div></td>
                                 <td class="bj_male"><span class="no">409</span></td>
-                                <td class="bj_male"><span class="no">410</span></td>
-                                <td class="bj_male"><span class="no">411</span></td>
-                                <td class="bj_male"><span class="no">412</span></td>
-                                <td class="bj_male"><span class="no">413</span></td>
-                                <td class="bj_male"><span class="no">414</span></td>
+                                <td class="bj_male"><span class="no">410</span><div class="stt name">홍길동</div></td>
+                                <td class="bj_male"><span class="no">411</span><div class="stt name">홍길동</div></td>
+                                <td class="bj_male"><span class="no">412</span><div class="stt name">홍길동</div></td>
+                                <td class="bj_male"><span class="no">413</span><div class="stt name">홍길동</div></td>
+                                <td class="bj_male"><span class="no">414</span><div class="stt name">홍길동</div></td>
                                 <td class="bj_male"><span class="no">415</span></td>
                                 <td class="bj_male"><span class="no">416</span></td>
                                 <td class="bj_male"><span class="no">417</span></td>
@@ -299,8 +308,6 @@
                     </table>
 
                     <div class="txt-r mt30">
-                        <a href="#" class="btn_cancle fl">배정 초기화</a>
-                        <a href="#" class="btn_save">저장</a>
                         <a href="#" class="btn_basic">목록</a>
                     </div>
 
