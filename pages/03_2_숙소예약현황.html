@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+
+    <link rel="stylesheet" href="../assets/css/reservation.css">
+</head>
+
+    <body>
+
+        <div class="wrap">
+            <header>
+                <div class="logo"><img src="../assets/images/logo.png"></div>
+                <ul class="gnb">
+                    <li class="active"><a href="">연수관리</a></li>
+                    <li><a href="">시설관리</a></li>
+                    <li><a href="">시간표 관리</a></li>
+                    <li><a href="">회원관리</a></li>
+                    <li><a href="">개인정보 접속 이력 관리</a></li>
+                </ul>
+            </header>
+
+            <div class="container">
+                <div class="lnbWrap">
+                    <div class="pageTitle">연수정보</div>
+                    <ul class="location">
+                        <li>home</li>
+                        <li>연수 관리</li>
+                        <li>숙소 예약 정보</li>
+                    </ul>
+                    <ul class="lnb">
+                        <li><a href="">연수 기본정보</a></li>
+                        <li><a href="">식당 정보</a></li>
+                        <li><a href="">시설 예약 정보</a></li>
+                        <li class="active"><a href="">숙소 예약 정보</a></li>
+                        <li><a href="">연수생 정보</a></li>
+                    </ul>
+                </div>
+
+                
+                
+                
+                <!-- contents 안에 각 컨텐츠가 들어감 ! -->
+                <div class="contents">
+
+                    <div class="tabBoxWrap">
+                        <button type="button"><div>숙소 배정 관리</div></button>
+                        <button type="button" class="active"><div>숙소 예약 현황</div></button>
+                    </div>
+
+                    <div class="topBox">
+                        <div class="selectArea">
+                            <div>
+                                <div class="leftTit">숙박 일자</div>
+                                <div class="rightCo">
+                                    <span class="date">2025-04-01 ~ 2025-04-02</span>
+                                    <span class="">1인 1실</span>
+                                    <span class="">배정완료</span>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="beomrye">
+                            <li><div class="label bj_male"></div><div class="exp">예약가능(남자)</div></li>
+                            <li><div class="label bj_male finish"></div><div class="exp">예약완료(남자)</div></li>
+                            <li><div class="label bj_female"></div><div class="exp">예약가능(여자)</div></li>
+                            <li><div class="label bj_female finish"></div><div class="exp">예약완료(여자)</div></li>
+                            <li><div class="label bj_finish"></div><div class="exp">배정예약</div></li>
+                        </ul>
+                    </div>
+
+
+                    <table class="basicTBL bjTBL_view radioORcheck"> 
+                        <thead>
+                            <tr>
+                                <th>건물명</th>
+                                <th>층</th>
+                                <th colspan="20">호수</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th rowspan="4">해오름관</th>
+                                <th>2층</th>
+
+                                <td class="bj_disAble"><span class="no">201</span></td>
+                                <td class="bj_disAble"><span class="no">202</span></td>
+                                <td class="bj_disAble"><span class="no">203</span></td>
+                                <td class="bj_disAble"><span class="no">204</span></td>
+                                <td class="bj_disAble"><span class="no">205</span></td>
+                                <td class="bj_disAble"><span class="no">206</span></td>
+                                <td class="bj_disAble"><span class="no">207</span></td>
+                                <td class="bj_disAble"><span class="no">208</span></td>
+
+                                <td class="bj_finish"><span class="no">209</span><div class="staute"></div></td>
+                                <td class="bj_finish"><span class="no">210</span></td>
+                                <td class="bj_finish"><span class="no">211</span></td>
+                                <td class="bj_finish"><span class="no">212</span></td>
+                                <td class="bj_finish"><span class="no">213</span></td>
+                                <td class="bj_finish"><span class="no">214</span></td>
+                                <td class="bj_finish"><span class="no">215</span></td>
+                                <td class="bj_finish"><span class="no">216</span></td>
+                                <td class="bj_finish"><span class="no">217</span></td>
+                                <td class="bj_finish"><span class="no">218</span></td>
+
+                                <td class="bj_notYet"><span class="no">219</span></td>
+                                <td class="bj_notYet"><span class="no">220</span></td>
+                            </tr>
+
+                            <tr>
+                                <th>3층</th>
+
+                                <td class="bj_disAble"><span class="no">301</span></td>
+                                <td class="bj_disAble"><span class="no">302</span></td>
+                                <td class="bj_disAble"><span class="no">303</span></td>
+                                <td class="bj_disAble"><span class="no">304</span></td>
+                                <td class="bj_disAble"><span class="no">305</span></td>
+                                <td class="bj_disAble"><span class="no">306</span></td>
+                                <td class="bj_disAble"><span class="no">307</span></td>
+                                <td class="bj_disAble"><span class="no">308</span></td>
+                                <td class="bj_disAble"><span class="no">309</span></td>
+                                <td class="bj_disAble"><span class="no">310</span></td>
+
+                                <td class="bj_finish"><span class="no">311</span></td>
+                                <td class="bj_finish"><span class="no">312</span></td>
+                                <td class="bj_finish"><span class="no">313</span></td>
+                                <td class="bj_finish"><span class="no">314</span></td>
+                                <td class="bj_finish"><span class="no">315</span></td>
+                                <td class="bj_finish"><span class="no">316</span></td>
+                                <td class="bj_finish"><span class="no">317</span></td>
+                                <td class="bj_finish"><span class="no">318</span></td>
+                                <td class="bj_finish"><span class="no">319</span></td>
+                                <td class="bj_finish"><span class="no">320</span></td>
+                            </tr>
+
+                            <tr>
+                                <th>4층</th>
+
+                                <td class="bj_finish"><span class="no">401</span></td>
+                                <td class="bj_finish"><span class="no">402</span></td>
+                                <td class="bj_finish"><span class="no">403</span></td>
+                                <td class="bj_finish"><span class="no">404</span></td>
+                                <td class="bj_finish"><span class="no">405</span></td>
+                                <td class="bj_finish"><span class="no">406</span></td>
+                                <td class="bj_finish"><span class="no">407</span></td>
+                                <td class="bj_finish"><span class="no">408</span></td>
+                                <td class="bj_finish"><span class="no">409</span></td>
+                                <td class="bj_finish"><span class="no">410</span></td>
+                                <td class="bj_finish"><span class="no">411</span></td>
+                                <td class="bj_finish"><span class="no">412</span></td>
+                                <td class="bj_finish"><span class="no">413</span></td>
+                                <td class="bj_finish"><span class="no">414</span></td>
+                                <td class="bj_finish"><span class="no">415</span></td>
+                                <td class="bj_finish"><span class="no">416</span></td>
+                                <td class="bj_finish"><span class="no">417</span></td>
+                                <td class="bj_finish"><span class="no">418</span></td>
+                                <td class="bj_finish"><span class="no">419</span></td>
+                                <td class="bj_finish"><span class="no">420</span></td>
+                            </tr>
+
+                            <tr>
+                                <th>5층</th>
+                                <td class="bj_notYet"><span class="no">501</span></td>
+                                <td class="bj_notYet"><span class="no">502</span></td>
+                                <td class="bj_notYet"><span class="no">503</span></td>
+                                <td class="bj_notYet"><span class="no">504</span></td>
+                                <td class="bj_notYet"><span class="no">505</span></td>
+                                <td class="bj_notYet"><span class="no">506</span></td>
+                                <td class="bj_notYet"><span class="no">507</span></td>
+                                <td class="bj_notYet"><span class="no">508</span></td>
+
+                                <td class="bj_disAble"><span class="no">509</span></td>
+                                <td class="bj_disAble"><span class="no">510</span></td>
+                                <td class="bj_disAble"><span class="no">511</span></td>
+                                <td class="bj_disAble"><span class="no">512</span></td>
+                                <td class="bj_disAble"><span class="no">513</span></td>
+                                <td class="bj_disAble"><span class="no">514</span></td>
+                                <td class="bj_disAble"><span class="no">515</span></td>
+                                <td class="bj_disAble"><span class="no">516</span></td>
+                                <td class="bj_disAble"><span class="no">517</span></td>
+                                <td class="bj_disAble"><span class="no">518</span></td>
+                                <td class="bj_disAble"><span class="no">519</span></td>
+                                <td class="bj_disAble"><span class="no">520</span></td>
+                            </tr>
+
+
+
+
+                            <tr>
+                                <th rowspan="4">달맞이관</th>
+                                <th>2층</th>
+
+                                <td class="bj_disAble"><span class="no">201</span></td>
+                                <td class="bj_disAble"><span class="no">202</span></td>
+                                <td class="bj_disAble"><span class="no">203</span></td>
+                                <td class="bj_disAble"><span class="no">204</span></td>
+                                <td class="bj_disAble"><span class="no">205</span></td>
+                                <td class="bj_disAble"><span class="no">206</span></td>
+                                <td class="bj_disAble"><span class="no">207</span></td>
+                                <td class="bj_disAble"><span class="no">208</span></td>
+                                <td class="bj_disAble"><span class="no">209</span></td>
+                                <td class="bj_disAble"><span class="no">210</span></td>
+
+                                <td class="bj_male"><span class="no">211</span></td>
+                                <td class="bj_male"><span class="no">212</span></td>
+                                <td class="bj_male"><span class="no">213</span></td>
+                                <td class="bj_male"><span class="no">214</span></td>
+                                <td class="bj_male"><span class="no">215</span></td>
+                                <td class="bj_male"><span class="no">216</span></td>
+                                <td class="bj_male"><span class="no">217</span></td>
+                                <td class="bj_male"><span class="no">218</span></td>
+
+                                <td class="bj_notYet"><span class="no">219</span></td>
+                                <td class="bj_notYet"><span class="no">220</span></td>
+                            </tr>
+
+                            <tr>
+                                <th>3층</th>
+
+                                <td class="bj_disAble"><span class="no">301</span></td>
+                                <td class="bj_disAble"><span class="no">302</span></td>
+                                <td class="bj_disAble"><span class="no">303</span></td>
+                                <td class="bj_disAble"><span class="no">304</span></td>
+                                <td class="bj_disAble"><span class="no">305</span></td>
+                                <td class="bj_disAble"><span class="no">306</span></td>
+                                <td class="bj_disAble"><span class="no">307</span></td>
+                                <td class="bj_disAble"><span class="no">308</span></td>
+                                <td class="bj_disAble"><span class="no">309</span></td>
+                                <td class="bj_disAble"><span class="no">310</span></td>
+
+                                <td class="bj_female"><span class="no">311</span></td>
+                                <td class="bj_female"><span class="no">312</span></td>
+                                <td class="bj_female"><span class="no">313</span></td>
+                                <td class="bj_female"><span class="no">314</span></td>
+                                <td class="bj_female"><span class="no">315</span></td>
+                                <td class="bj_female"><span class="no">316</span></td>
+                                <td class="bj_female"><span class="no">317</span></td>
+                                <td class="bj_female"><span class="no">318</span></td>
+                                <td class="bj_female"><span class="no">319</span></td>
+                                <td class="bj_female"><span class="no">320</span></td>
+                            </tr>
+
+                            <tr>
+                                <th>4층</th>
+
+                                <td class="bj_male"><span class="no">401</span></td>
+                                <td class="bj_male"><span class="no">402</span></td>
+                                <td class="bj_male"><span class="no">403</span></td>
+                                <td class="bj_male"><span class="no">404</span></td>
+                                <td class="bj_male"><span class="no">405</span></td>
+                                <td class="bj_male"><span class="no">406</span></td>
+                                <td class="bj_male"><span class="no">407</span></td>
+                                <td class="bj_male"><span class="no">408</span></td>
+                                <td class="bj_male"><span class="no">409</span></td>
+                                <td class="bj_male"><span class="no">410</span></td>
+                                <td class="bj_male"><span class="no">411</span></td>
+                                <td class="bj_male"><span class="no">412</span></td>
+                                <td class="bj_male"><span class="no">413</span></td>
+                                <td class="bj_male"><span class="no">414</span></td>
+                                <td class="bj_male"><span class="no">415</span></td>
+                                <td class="bj_male"><span class="no">416</span></td>
+                                <td class="bj_male"><span class="no">417</span></td>
+                                <td class="bj_male"><span class="no">418</span></td>
+                                <td class="bj_male"><span class="no">419</span></td>
+                                <td class="bj_male"><span class="no">420</span></td>
+                            </tr>
+
+                            <tr>
+                                <th>5층</th>
+                                <td class="bj_notYet"><span class="no">501</span></td>
+                                <td class="bj_notYet"><span class="no">502</span></td>
+                                <td class="bj_notYet"><span class="no">503</span></td>
+                                <td class="bj_notYet"><span class="no">504</span></td>
+                                <td class="bj_notYet"><span class="no">505</span></td>
+                                <td class="bj_notYet"><span class="no">506</span></td>
+                                <td class="bj_notYet"><span class="no">507</span></td>
+                                <td class="bj_notYet"><span class="no">508</span></td>
+
+                                <td class="bj_disAble"><span class="no">509</span></td>
+                                <td class="bj_disAble"><span class="no">510</span></td>
+                                <td class="bj_disAble"><span class="no">511</span></td>
+                                <td class="bj_disAble"><span class="no">512</span></td>
+                                <td class="bj_disAble"><span class="no">513</span></td>
+                                <td class="bj_disAble"><span class="no">514</span></td>
+                                <td class="bj_disAble"><span class="no">515</span></td>
+                                <td class="bj_disAble"><span class="no">516</span></td>
+                                <td class="bj_disAble"><span class="no">517</span></td>
+                                <td class="bj_disAble"><span class="no">518</span></td>
+                                <td class="bj_disAble"><span class="no">519</span></td>
+                                <td class="bj_disAble"><span class="no">520</span></td>
+                            </tr>
+
+
+                        </tbody>
+                    </table>
+
+                    <div class="txt-r mt30">
+                        <a href="#" class="btn_cancle fl">배정 초기화</a>
+                        <a href="#" class="btn_save">저장</a>
+                        <a href="#" class="btn_basic">목록</a>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+                <!-- //contents END -->
+            </div>
+            <!-- //container END -->
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+    
+
+    <script type="text/javascript" src="../assets/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="../assets/js/script.js"></script>
+    </body>
+</html>

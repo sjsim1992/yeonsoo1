@@ -1,7 +1,58 @@
-@charset "utf-8";
-@import url("common.css");
+@charset "utf-8"; 
+@import url("common.css"); 
 
 
 
-@media (min-width:991px) and (max-width:1299px){}
-@media (max-width:990px){}
+
+
+/* 숙소 배정 관리 */
+
+/* 상단 선택 박스 */
+.topBox {margin-top:30px; display:flex; justify-content:space-between; align-items:flex-end;}
+.topBox .selectArea {display:flex; flex-direction:column; flex-grow:1;}
+.topBox .selectArea>div {display:flex; align-items:flex-start;}
+.topBox .selectArea .leftTit {width:150px; font-family:'Gmarket Sans KR'; color:#333; padding:0px 0 0 15px; position:relative; line-height:40px;}
+.topBox .selectArea .leftTit:before {content:""; width:8px; height:2px; display:inline-block; background:#088488; transform:rotate(-45deg); position:absolute; left:2px; top:17px;}
+.topBox .selectArea .rightCo {width:50%; flex-grow:1; padding:0 10px; display:flex; flex-wrap:wrap; line-height:30px;}
+.topBox .selectArea .rightCo .date {font-family:'Gmarket Sans KR'; font-weight:200; font-size:14px; line-height:40px;}
+.topBox .selectArea .rightCo span {}
+.topBox .selectArea .rightCo span:only-of-type {margin-right:15px;}
+.topBox .selectArea .rightCo span:not(:only-of-type):after {}
+.topBox .selectArea .rightCo .radioORcheck {width:100%; display:flex; gap:60px;}
+
+.topBox .beomrye {display:flex; gap:10px;}
+.topBox .beomrye li {display:flex; align-items:center;}
+.topBox .beomrye li .exp {font-size:14px; color:#666;}
+.topBox .beomrye li .label {width:17px; height:17px; display:inline-block; vertical-align:middle; border:1px solid #e8e8e8; border-radius:4px; margin-right:5px; box-sizing:border-box; margin-top:3px;}
+.topBox .beomrye li .label.bj_disAble {background:#e8e8e8; overflow:hidden; position:relative;}
+.topBox .beomrye li .label.bj_disAble:before {content:""; width:30px; height:1px; background:#c20000; display:inline-block; transform:rotate(-45deg); position:absolute; left:-4px; top:4px; opacity:0.7;}
+
+/* 배정상태 공통 컬러 */
+[class *="bj_"] {}
+.bj_disAble {background:#f5f5f5;}
+.bj_notYet  {background:#fff;}
+.bj_male    {background:#d4f3fe;}  .bj_male.finish    {background:#d4f3fe;}
+.bj_female  {background:#ffdde3;}  .bj_female.finish  {background:#ffdde3;}
+.bj_finish  {background:#828282;}
+
+
+
+
+.basicTBL[class *="bjTBL_"] {margin-top:30px; table-layout:fixed;}
+.basicTBL[class *="bjTBL_"] thead th:first-child {width:95px;}
+.basicTBL[class *="bjTBL_"] thead th:nth-child(2) {width:45px;}
+.basicTBL[class *="bjTBL_"] tbody th:first-child {border-right:1px solid #ececec;}
+.basicTBL[class *="bjTBL_"] td {vertical-align:top; position:relative; overflow:hidden;}
+.basicTBL[class *="bjTBL_"] td .no {font-family:'Gmarket Sans KR'; font-size:12px; letter-spacing:1px; opacity:0.6; display:block; margin-bottom:7px;}
+.basicTBL[class *="bjTBL_"] td input[type="checkbox"] + label:before {margin-right:0;}
+.basicTBL[class *="bjTBL_"] td.bj_finish {border-color: #6c6b6b;}
+
+.basicTBL.bjTBL_admin {}
+.basicTBL.bjTBL_admin td.bj_disAble:before {content:""; width:100px; height:1px; display:inline-block; background:#333; transform:rotate(-50deg); position:absolute; left:-20px; top:28px; opacity:0.1;}
+.basicTBL.bjTBL_admin td.bj_disAble .no {opacity:0.3;}
+
+.basicTBL.bjTBL_view {}
+.basicTBL.bjTBL_view td.bj_disAble {background:#fff;}
+.basicTBL.bjTBL_view td.bj_notYet .no,
+.basicTBL.bjTBL_view td.bj_disAble .no {opacity:0;}
+

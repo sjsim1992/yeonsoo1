@@ -151,3 +151,39 @@ caption,legend {overflow:hidden;width:1px;height:1px;margin:-1px 0 0 -1px;font-s
 *+html table {border-collapse:collapse}
 
 
+
+
+
+/*margin*/
+.mt0 { margin-top:0 !important; }
+.mt5 { margin-top:5px; }
+.mt10 { margin-top:10px; }
+.mt15 { margin-top:15px; }
+.mt20 { margin-top:20px; }
+.mt25 { margin-top:25px; }
+.mt30 { margin-top:30px; }
+.mt40 { margin-top:40px; }
+.mt50 { margin-top:50px; }
+
+.mb0 { margin-bottom:0 !important; }
+.mb5 { margin-bottom:5px; }
+.mb10 { margin-bottom:10px; }
+.mb15 { margin-bottom:15px; }
+.mb20 { margin-bottom:20px; }
+.mb25 { margin-bottom:25px; }
+.mb30 { margin-bottom:30px; }
+.mb40 { margin-bottom:40px; }
+.mb50 { margin-bottom:50px; }
+.mb80 { margin-bottom:80px; }
+.mb100 { margin-bottom:100px; }
+
+
+.wd100 { width:100% !important; }
+
+
+
+.txt-l { text-align:left; } 
+.txt-c { text-align:center; } 
+.txt-r { text-align:right; } 
+.fl { float:left; } 
+.fr { float:right; } 

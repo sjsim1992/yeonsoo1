@@ -2,37 +2,50 @@
 
 
 
-
-.txt-l { text-align:left; } 
-.txt-c { text-align:center; } 
-.txt-r { text-align:right; } 
-.fl { float:left; } 
-.fr { float:right; } 
-
-
-
-
-
-
-
 /* select */
 .selectBox { height: 46px; border-radius: 10px; padding: 0 25px 0 10px; border: 1px solid var(--pointColor); font-size: 15px; color: #454545; } 
 
 
-
 /* button */
-[class *="btn_"] { display: inline-block; box-sizing: border-box; padding: 10px 15px; border-radius: 10px; font-size: 15px; } 
+[class *="btn_"] {display: inline-block;box-sizing: border-box;padding: 10px 15px;border-radius: 10px;font-size: 15px;} 
 [class *="btn_save"] { background: var(--pointColor); border: 2px solid var(--pointColor); color: #fff; } 
 [class *="btn_cancle"] { border: 2px solid #c20000; color: #c20000; } 
 [class *="btn_basic"] { border: 2px solid #e7ebf4; background: #e7ebf4; } 
+[class *="btn_basic2"] { border: 2px solid #6576A2; background: #6576A2; color:#fff; } 
 
 [class $="_big"] { padding: 14px 20px; font-size: 18px; } 
-[class $="_small"] { padding: 6px 7px; font-size: 13px; border-width: 1px; } 
-
+[class $="_small"] {padding: 0 7px;font-size: 13px;border-width: 1px;line-height: 35px;} 
 
 [class *="btn_basic_green"] { background: #fff; border: 2px solid #369b36; } 
 [class *="btn_"].download:before { content:""; } 
 [class *="btn_"].upload:before { content:""; } 
+
+
+/* radio */
+ul.radioORcheck {display:flex; gap:30px;}
+ul.radioORcheck>li {}
+.radioORcheck input[type="radio"] { border:0; clip:rect(0 0 0 0); height:1px; margin:-1px; overflow:hidden; padding:0; position:absolute; width:1px; }
+.radioORcheck input[type="radio"] + label { padding-left:27px; position:relative; cursor:pointer; display: inline-block; box-sizing: border-box; vertical-align: middle; line-height: 130%; }
+.radioORcheck input[type="radio"] + label:before {content:"";width: 17px;height: 17px;border: 2px solid #c2d4df;border-radius:100%;position:absolute;left:0;top: 1px;transition:border-color 0.5s;-webkit-transition:border-color 0.5s;}
+.radioORcheck input[type="radio"]:disabled + label:before { border-color: #ddd !important; background: #f0f0f0; }
+.radioORcheck input[type="radio"]:disabled + label:hover { cursor:default; }
+.radioORcheck input[type="radio"] + label:hover:before { border-color:#8a8a8a; }
+.radioORcheck input[type="radio"]:focus-visible + label:before { outline:thin dotted grey; }
+.radioORcheck input[type="radio"]:checked + label:before {border-color: #0379bf;}
+.radioORcheck input[type="radio"]:checked + label:after {content:"";width: 9px;height: 9px;background: #0379bf;position:absolute;left: 6px;border-radius:100%;top: 7px;}
+
+/* checkbox */
+.radioORcheck input[type="checkbox"] { border:0; clip:rect(0 0 0 0); height:1px; margin:-1px; overflow:hidden; padding:0; position:absolute; width:1px; }
+.radioORcheck input[type="checkbox"] + label {position:relative;cursor:pointer;line-height: 150%;}
+.radioORcheck input[type="checkbox"] + label:before {content:' ';display:inline-block;margin: -1px 8px 0 0;vertical-align:middle;width: 21px;height: 21px;line-height: 20px;box-shadow: none;border:2px solid #c2d4df;border-radius: 7px;font-size: 11px;text-align: center;box-sizing: border-box;transition:border-color 0.5s;-webkit-transition:border-color 0.5s;}
+.radioORcheck input[type="checkbox"]:checked + label:before {content:"\f00c";font-family:fontAwesome;color:#0379bf;border:2px solid #0379bf;}
+.radioORcheck input[type="checkbox"] + label:hover:before { border-color:#8a8a8a; }
+.radioORcheck input[type="checkbox"] + label:hover { cursor:pointer; }
+.radioORcheck input[type="checkbox"]:disabled + label:before { background: #f0f0f0; border-color: #ddd !important; }
+.radioORcheck input[type="checkbox"]:focus-visible + label:before { outline:thin dotted black; }
+
+
+
 
 
 /* TAB */
@@ -96,6 +109,23 @@ header .gnb li.active a { color: var(--pointColor); }
 .lnbWrap .lnb li { flex-grow: 1; text-align: center; } 
 .lnbWrap .lnb li a {font-size: 20px;padding: 15px 0;display: block;border-bottom: 3px solid transparent;font-family: 'Gmarket Sans KR';} 
 .lnbWrap .lnb li.active a { border-bottom-color: var(--pointColor); font-weight: 500; } 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
