@@ -56,69 +56,73 @@
 
 
 
-:root {
-  /** Color **/
-  --fontColor: #222222;
-  
-  --Primary-Blue: #2264DC;
-  --Primary-Black: #222222;
-  --Primary-White: #ffffff;
-
-  --Secondary-DarkBlue: #0A0046;
-  --Secondary-DeepBlue: #1D4676;
-  --Secondary-SkyBlue: #4C9AED;
-  --Secondary-Orange: #FFB142;
-
-  --Sub-LightBlue: #CAF0F8;
-  --Sub-OffWhite: #F1F4F5;
-
-  --Status-InfoLink: #3855E8;
-  --Status-Success: #3BB000;
-  --Status-Warning: #FFD028;
-  --Status-Error: #F71010;
-
-  --Grayscale-700: #2A2C3B;
-  --Grayscale-600: #3E4355;
-  --Grayscale-500: #4F5A7E;
-  --Grayscale-400: #8E97B4;
-  --Grayscale-300: #BCC2D6;
-  --Grayscale-200: #D2D7E5;
-  --Grayscale-150: #E6E8F0;
-  --Grayscale-100: #EEEFF5;
-  --Grayscale-50: #F4F5F8;
-  --Grayscale-0: #FAFAFC;
-
-  --Text-700: #2A2C3B; /*Basic*/
-  --Text-600: #3E4355;
-  --Text-500: #4F5A7E;
-  --Text-400: #8E97B4;
-  --Text-300: #BCC2D6;
-  --Text-Disable: #D2D7E5;
-  --Text-White: #ffffff;
-
-  /** Font Style **/
-  /* Size */
-  --f40: 40px;
-  --f32: 32px;
-  --f24: 24px;
-  --f20: 20px;
-  --f18: 18px;
-  --f16: 16px;
-  --f14: 14px;
-  --f12: 12px;
-  --f11: 11px;
-  /* Weight */
-  --fN: 400;
-  --fM: 500;
-  --fB: 700;
-  /* Line height */
-  --f-Lh-130: 1.3; 
-  --f-Lh-140: 1.4;
-  /* Letter spacing */
-  --f-Ls--10: -0.01em;
-  --f-Ls--20: -0.02em;
-  --f-Ls--30: -0.03em;
+/* Gmarket Sans */
+@font-face {
+  font-family: "Gmarket Sans KR";
+  font-style: normal;
+  font-weight: 200;
+  src: url(../fonts/GmarketSansTTFLight.woff2) format("woff2"), 
+  url(../fonts/GmarketSansTTFLight.woff) format("woff"), 
+  url(../fonts/GmarketSansTTFLight.otf) format("opentype");
 }
+
+@font-face {
+  font-family: "Gmarket Sans KR";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/GmarketSansTTFMedium.woff2) format("woff2"), 
+  url(../fonts/GmarketSansTTFMedium.woff) format("woff"), 
+  url(../fonts/GmarketSansTTFMedium.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Gmarket Sans KR";
+  font-style: normal;
+  font-weight: 600;
+  src: url(../fonts/GmarketSansTTFBold.woff2) format("woff2"), 
+  url(../fonts/GmarketSansTTFBold.woff) format("woff"), 
+  url(../fonts/GmarketSansTTFBold.otf) format("opentype");
+}
+
+
+:root {--body: 1300px;
+ /** Color **/
+ --fontColor: #333333; 
+ --pointColor: #346FEF;
+
+ --Status-blue: #16a6fd; 
+ --Status-green: #3BB000; 
+ --Status-yellow: #FFD028; 
+ --Status-red: #c20000; 
+ --Status-black: #000000;
+ --Grayscale-5: #2A2C3B; 
+ --Grayscale-4: #3E4355; 
+ --Grayscale-3: #8E97B4; 
+ --Grayscale-2: #BCC2D6; 
+ --Grayscale-1: #D2D7E5; 
+ --Grayscale-0: #FAFAFC;
+
+ --Text-Disable: #D2D7E5; 
+ --Text-White: #ffffff;
+
+ /** Font Style **/
+ /* Size */
+ --fs40: 40px; 
+ --fs32: 32px; 
+ --fs24: 24px; 
+ --fs20: 20px; 
+ --fs18: 18px; 
+ --fs16: 16px; 
+ --fs14: 14px; 
+ --fs13: 12px; 
+ --fs12: 12px; 
+ --fs11: 11px; 
+ 
+ /* Weight */
+ --fw_l: 200; 
+ --fw_m: 400; 
+ --fw_b: 600;}
+
 
 /* reset */
 * {font-family:'Noto Sans KR';}
