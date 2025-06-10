@@ -81,7 +81,7 @@
 
 .basicTBL[class *="bjTBL_usr"] td.bj_disAble {background:#fff;}
 .basicTBL[class *="bjTBL_usr"] td.bj_disAble .no {opacity:0;}
-.basicTBL[class *="bjTBL_usr"] td.bj_notYet {background: #eceff6;padding-bottom: 33px;}
+.basicTBL[class *="bjTBL_usr"] td.bj_notYet {background: #eceff6; padding-bottom: 33px; border-color: #e2e3e6;}
 
 .basicTBL[class *="bjTBL_usr"] input[type="radio"] + label {padding-left: 0; position: absolute; margin: 1px 0 0 -10px;}
 .basicTBL[class *="bjTBL_usr"] input[type="radio"] + label:before {}
