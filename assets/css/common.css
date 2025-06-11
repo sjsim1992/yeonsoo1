@@ -85,7 +85,11 @@
 }
 
 
-:root {--body: 1300px;
+:root {
+  --body: 1300px;
+  --loginBody: 500px;
+  --narrowBody: 800px;
+
  /** Color **/
  --fontColor: #333333; 
  --pointColor: #346FEF;
@@ -121,7 +125,10 @@
  /* Weight */
  --fw_l: 200; 
  --fw_m: 400; 
- --fw_b: 600;}
+ --fw_b: 600;
+
+ --gmarket:'Gmarket Sans KR'
+}
 
 
 /* reset */
