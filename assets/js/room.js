@@ -54,18 +54,14 @@ document.addEventListener("DOMContentLoaded", function () {
     "511호": { top: "292px", left: "324px" },
     "513호": { top: "292px", left: "408px" },
     "501호": { top: "384px", left: "834px" },
-        // 5층
-    "502호": { top: "384px", left: "769px" },
-    "503호": { top: "384px", left: "705px" },
-    "504호": { top: "384px", left: "640px" },
-    "505호": { top: "384px", left: "574px" },
-    "506호": { top: "384px", left: "460px" },
-    "507호": { top: "384px", left: "400px" },
-    "508호": { top: "384px", left: "341px" },
-    "509호": { top: "384px", left: "283px" },
-    "511호": { top: "292px", left: "324px" },
-    "513호": { top: "292px", left: "408px" },
-    "501호": { top: "384px", left: "834px" }
+    // 6층
+    "612호": { top: "292px", left: "694px" },
+    "602호": { top: "384px", left: "783px" },
+    "603호": { top: "384px", left: "718px" },
+    "604호": { top: "384px", left: "652px" },
+    "605호": { top: "384px", left: "588px" },
+    "610호": { top: "292px", left: "393px" },
+    "601호": { top: "384px", left: "849px" }
   };
 
 

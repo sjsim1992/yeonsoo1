@@ -1,6 +1,11 @@
-@charset "utf-8"; .facility-booking h3 { margin-bottom: 10px; font-family: 'Gmarket Sans KR'; font-weight: 500; } 
-.facility-booking .tipText { font-size: 14px; color: #828282; } 
+@charset "utf-8"; 
 
+
+/* td 데이터 없는 경우 */
+.basicTBL tbody td.no-data { padding: 20px 5px; } 
+
+.facility-booking h3 { margin-bottom: 10px; font-family: 'Gmarket Sans KR'; font-weight: 500; } 
+.facility-booking .tipText { font-size: 14px; color: #828282; } 
 
 .facility-booking .map-with-list { display: flex; gap: 20px; padding: 20px; box-sizing: border-box; background: #fafafa; } 
 .facility-booking .room-list { display: flex; gap: 6px; flex-direction: column; } 
@@ -36,13 +41,9 @@
  .facility-booking .map-wrapper .map-container .map-overlay li[data-ho ="513호"] a { width: 45px; } 
  /* 6층 */
  .facility-booking.six-floor .map-wrapper .map-container .map-background { background-image: url(../images/map_04.png); } 
- .facility-booking .map-wrapper .map-container .map-overlay li[data-ho^="5"] a { width: 66px; } 
-
-
-
-
-
-
+ .facility-booking .map-wrapper .map-container .map-overlay li[data-ho^="6"] a { width: 66px; } 
+ .facility-booking .map-wrapper .map-container .map-overlay li[data-ho="612호"] a { width: 120px; } 
+ .facility-booking .map-wrapper .map-container .map-overlay li[data-ho="610호"] a { width: 45px; } 
 
 
 
@@ -67,18 +68,18 @@
 .facility-booking .map-wrapper .map-container .map-overlay li .ho { display:none; } 
 .facility-booking .map-wrapper .map-container .map-overlay li .name { display:none; } 
 
+
 /* 시설 예약하기 */
 .facility-booking .map-with-list + .info_table { margin-top:30px; } 
 
-.info_table .booked,.booking-details .booked { color: #ef594e; } 
+.facility-booking .info_table .booked,.booking-details .booked { color: #ef594e; } 
 /* .info_table .available,.booking-details .available { color: #16a6fd; } */
-.info_table .tdStatus,.booking-details .tdStatus { background-color: transparent; } 
-.disabled-text { color: #c20000; font-weight:500; } 
+.facility-booking .info_table .tdStatus,.booking-details .tdStatus { background-color: transparent; } 
+.facility-booking .disabled-text { color: #c20000; font-weight:500; } 
 
 /* 시설 예약정보 */
-.info_table + .booking-details { margin-top:40px; } 
+.facility-booking .info_table + .booking-details { margin-top:40px; } 
 
 
-/* td 데이터 없는 경우 */
-.basicTBL tbody td.no-data { padding: 20px 5px; } 
+
 
