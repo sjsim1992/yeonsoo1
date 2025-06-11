@@ -7,6 +7,7 @@
     <title>02_5_시설예약정보_미래관4층</title>
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/room.css">
+    <script type="text/javascript" src="../assets/js/room.js"></script>
     <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
 </head>
 
@@ -51,13 +52,13 @@
          <div class="contents">
 
              <div class="tabBoxWrap">
-                 <button type="button" class="active">
+                 <button type="button">
                      <div>미래관 2층</div>
                  </button>
                  <button type="button">
                      <div>미래관 3층</div>
                  </button>
-                 <button type="button">
+                 <button type="button" class="active">
                      <div>미래관 4층</div>
                  </button>
                  <button type="button">
@@ -73,7 +74,7 @@
 
 
             <!-- 내용시작 -->
-            <div class="facility-booking">
+            <div class="facility-booking four-floor">
 
 
                 <select class="selectBox">
@@ -92,40 +93,130 @@
 
                     <!-- 공간 리스트 -->
                     <ul class="room-list">
-                        <li data-ho="200호">
+                        <li data-ho="415호">
                             <a href="javascript:;">
                                 <p class="name-set">
-                                    <span class="name">배움홀</span>
-                                    <span class="ho">200호</span>
+                                    <span class="name">대강의실</span>
+                                    <span class="ho">415호</span>
                                 </p>
                                 <p class="status booked">예약완료</p>
                             </a>
                         </li>
-                        <li data-ho="201호">
+                        <li data-ho="401호">
                             <a href="javascript:;">
                                 <p class="name-set">
-                                    <span class="name">나눔홀</span>
-                                    <span class="ho">201호</span>
+                                    <span class="name">중강의실</span>
+                                    <span class="ho">401호</span>
                                 </p>
                                 <p class="status available">예약가능</p>
                             </a>
                         </li>
-                        <li data-ho="202호">
+                        <li data-ho="406호">
                             <a href="javascript:;">
                                <p class="name-set">
-                                    <span class="name">아람홀</span>
-                                    <span class="ho">202호</span>
+                                    <span class="name">소강의실</span>
+                                    <span class="ho">406호</span>
                                 </p>
                                 <p class="status available">예약가능</p>
                             </a>
                         </li>
-                        <li data-ho="203호">
+                        <li data-ho="407호">
                             <a href="javascript:;">
                                <p class="name-set">
-                                    <span class="name">서희홀</span>
-                                    <span class="ho">203호</span>
+                                    <span class="name">소강의실</span>
+                                    <span class="ho">407호</span>
                                 </p>
-                                <p class="status booked">예약완료</p>
+                                <p class="status available">예약가능</p>
+                            </a>
+                        </li>
+                        <li data-ho="408호">
+                            <a href="javascript:;">
+                               <p class="name-set">
+                                    <span class="name">소강의실</span>
+                                    <span class="ho">408호</span>
+                                </p>
+                                <p class="status available">예약가능</p>
+                            </a>
+                        </li>
+                        <li data-ho="409호">
+                            <a href="javascript:;">
+                               <p class="name-set">
+                                    <span class="name">소강의실</span>
+                                    <span class="ho">409호</span>
+                                </p>
+                                <p class="status available">예약가능</p>
+                            </a>
+                        </li>
+                        <li data-ho="402호">
+                            <a href="javascript:;">
+                               <p class="name-set">
+                                    <span class="name">토의실</span>
+                                    <span class="ho">402호</span>
+                                </p>
+                                <p class="status available">예약가능</p>
+                            </a>
+                        </li>
+                        <li data-ho="403호">
+                            <a href="javascript:;">
+                               <p class="name-set">
+                                    <span class="name">토의실</span>
+                                    <span class="ho">403호</span>
+                                </p>
+                                <p class="status available">예약가능</p>
+                            </a>
+                        </li>
+                        <li data-ho="404호">
+                            <a href="javascript:;">
+                               <p class="name-set">
+                                    <span class="name">토의실</span>
+                                    <span class="ho">404호</span>
+                                </p>
+                                <p class="status available">예약가능</p>
+                            </a>
+                        </li>
+                        <li data-ho="405호">
+                            <a href="javascript:;">
+                               <p class="name-set">
+                                    <span class="name">토의실</span>
+                                    <span class="ho">405호</span>
+                                </p>
+                                <p class="status available">예약가능</p>
+                            </a>
+                        </li>
+                        <li data-ho="413호">
+                            <a href="javascript:;">
+                               <p class="name-set">
+                                    <span class="name">토의실</span>
+                                    <span class="ho">413호</span>
+                                </p>
+                                <p class="status available">예약가능</p>
+                            </a>
+                        </li>
+                        <li data-ho="414호">
+                            <a href="javascript:;">
+                               <p class="name-set">
+                                    <span class="name">토의실</span>
+                                    <span class="ho">414호</span>
+                                </p>
+                                <p class="status available">예약가능</p>
+                            </a>
+                        </li>
+                        <li data-ho="410호">
+                            <a href="javascript:;">
+                               <p class="name-set">
+                                    <span class="name">컴퓨터실</span>
+                                    <span class="ho">410호</span>
+                                </p>
+                                <p class="status available">예약가능</p>
+                            </a>
+                        </li>
+                        <li data-ho="412호">
+                            <a href="javascript:;">
+                               <p class="name-set">
+                                    <span class="name">컴퓨터실</span>
+                                    <span class="ho">412호</span>
+                                </p>
+                                <p class="status available">예약가능</p>
                             </a>
                         </li>
                     </ul>
@@ -146,9 +237,9 @@
 
 
                 <!-- 시설 예약하기 표 -->
-                <div class="info_table" style="display: none;">
+                <div class="info_table">
                     <h3>시설 예약하기</h3>
-                    <table class="basicTBL">
+                     <table class="basicTBL">
                         <thead>
                             <tr>
                                 <th>일자</th>
@@ -162,12 +253,14 @@
                                 <th>관리</th>
                             </tr>
                         </thead>
-                        <tbody id="bookingInfoBody">
-                            <!-- JS로 채움 -->
+                        <tbody id="bookingTableBody">
+                            <tr>
+                                <td colspan="9" class="no-data">데이터가 없습니다.</td>
+                            </tr>
                         </tbody>
                     </table>
 
-                    <p class="mt5">※ 시설 안내도에서 시설(실명) 클릭 시 시설 예약 정보가 표시 되며, 예약가능 상태일 경우 [예약하기]를 클릭하여 시설 예약이 가능 합니다. </p>
+                    <p class="tipText mt10">※ 시설 안내도에서 시설(실명) 클릭 시 시설 예약 정보가 표시 되며, 예약가능 상태일 경우 [예약하기]를 클릭하여 시설 예약이 가능 합니다. </p>
                 </div>
                 <!-- /시설 예약하기 표 -->
 
@@ -190,21 +283,23 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td><a href="#" class="btn_cancle_small">예약취소</a></td>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><a href="#" class="btn_cancle_small">예약취소</a></td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
                 <!-- /시설 예약정보 표 -->
 
-                <div class="btn-set end mt20">
+                <div class="txt-r mt30">
                     <a href="#" class="btn_basic">목록</a>
                 </div>
 
@@ -226,129 +321,6 @@
 
 
  </div>
-
-
-    
-
-
-
-
-
-
-
-    
-
-<script>
-
-
-
-document.addEventListener("DOMContentLoaded", function () {
-
-  const mapList = document.querySelector(".room-list");
-  const mapBox = document.querySelector(".map-container");
-  const infoTable = document.querySelector(".info_table");
-
-
-
-  // 지도 위에 포인트 복제
-  const clonedMapList = mapList.cloneNode(true);
-  clonedMapList.classList.add("map-overlay");
-
-
-
-  // 위치 지정용 맵
-  const positionMap = {
-    "200호": { top: "104px", left: "175px" },
-    "201호": { top: "147px", left: "695px" },
-    "202호": { top: "229px", left: "666px" },
-    "203호": { top: "292px", left: "547px" },
-  };
-
-
-
-  // 각 li에 위치 적용
-  clonedMapList.querySelectorAll("li").forEach((li) => {
-    const ho = li.getAttribute("data-ho");
-    if (positionMap[ho]) {
-      li.style.top = positionMap[ho].top;
-      li.style.left = positionMap[ho].left;
-    }
-  });
-
-  mapBox.appendChild(clonedMapList);
-
-
-
-  // 클릭 이벤트 - 리스트와 지도 둘 다
-  [mapList, clonedMapList].forEach((list) => {
-    list.addEventListener("click", function (event) {
-      const li = event.target.closest("li");
-      if (!li) return;
-      event.preventDefault();
-
-      const ho = li.getAttribute("data-ho");
-
-      syncActiveClasses(ho);
-      updateInfoTable(li);
-    });
-  });
-
-
-
-  function syncActiveClasses(ho) {
-    const allItems = [
-      ...mapList.querySelectorAll("li"),
-      ...clonedMapList.querySelectorAll("li"),
-    ];
-    allItems.forEach((item) => {
-      item.classList.toggle("active", item.getAttribute("data-ho") === ho);
-    });
-  }
-
-  function updateInfoTable(item) {
-  const name = item.querySelector(".name")?.innerText || "";
-  const ho = item.querySelector(".ho")?.innerText || "";
-  const statusText = item.querySelector(".status")?.innerText || "";
-
-  let statusClass = "";
-  if (statusText === "예약완료") {
-    statusClass = "booked";
-  } else if (statusText === "예약가능") {
-    statusClass = "available";
-  }
-
-  const infoTable = document.querySelector(".info_table");
-  const tbody = document.getElementById("bookingInfoBody");
-
-  // 내용 업데이트
-  tbody.innerHTML = `
-    <tr>
-      <td></td> 
-      <td></td>  
-      <td></td>  
-      <td></td>  
-      <td></td>    
-      <td>${name}</td>
-      <td>${ho}</td>
-      <td><span class="tdStatus ${statusClass}">${statusText}</span></td>
-      <td><a href="#" class="btn_save_small">예약하기</a></td>  
-    </tr>
-  `;
-
-  // 표시하기
-  infoTable.style.display = "block";
-}
-
-});
-
-
-
-
-
-
-
-</script>
-
 
 
 

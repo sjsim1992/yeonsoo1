@@ -1,53 +1,84 @@
-@charset "utf-8";
+@charset "utf-8"; .facility-booking h3 { margin-bottom: 10px; font-family: 'Gmarket Sans KR'; font-weight: 500; } 
+.facility-booking .tipText { font-size: 14px; color: #828282; } 
 
 
-.facility-booking .map-with-list {display: flex;gap: 20px;padding: 20px;box-sizing: border-box;background: #fafafa;} 
-.facility-booking .room-list {display: flex;gap: 6px;flex-direction: column;} 
-.facility-booking .room-list:not(.map-overlay) li {border: 1px solid #d8dce5;border-radius: 10px;box-sizing: border-box;position: relative;width: 163px;transition: all 0.3s;background: #fff;box-shadow: 1px 0px 4px 1px rgb(0 0 0 / 3%);} 
-.facility-booking .room-list:not(.map-overlay) li a {padding: 8px 65px 8px 12px;display: block;}
-.facility-booking .room-list:not(.map-overlay) li.active {background-color: #cce8be;border-color: #3BB000;} 
-.facility-booking .map-wrapper { height: 400px; border: 1px solid #D8DCE5; width: 100%; position: relative; display: flex; } 
-.facility-booking .map-wrapper .map-container {width: 100%;padding: 20px;background: #fff;} 
+.facility-booking .map-with-list { display: flex; gap: 20px; padding: 20px; box-sizing: border-box; background: #fafafa; } 
+.facility-booking .room-list { display: flex; gap: 6px; flex-direction: column; } 
+.facility-booking .room-list:not(.map-overlay) li { border: 1px solid #d8dce5; border-radius: 10px; box-sizing: border-box; position: relative; width: 163px; transition: all 0.3s; background: #fff; box-shadow: 1px 0px 4px 1px rgb(0 0 0 / 3%); } 
+.facility-booking .room-list:not(.map-overlay) li a { padding: 8px 65px 8px 12px; display: block; } 
+.facility-booking .room-list:not(.map-overlay) li.active { background-color: #cce8be; border-color: #3BB000; } 
+.facility-booking .map-wrapper { height: 524px; border: 1px solid #D8DCE5; width: 100%; position: relative; display: flex; } 
+.facility-booking .map-wrapper .map-container { width: 100%; /* padding: 20px; */background: #fff; } 
 .facility-booking .map-wrapper .map-container .map-background { width:100%; height:100%; background:url(../images/map_00.png) center no-repeat; background-size: contain; transition:background-image .03s ease-in-out; } 
-    /* 3층 */
-    .three-floor .map-wrapper .map-container .map-background { background-image: url(../images/map_01.png);}
-    .facility-booking .map-wrapper .map-container .map-overlay li[data-ho *= "308호"] a{ width: 60px; height: 69px;}
-    .facility-booking .map-wrapper .map-container .map-overlay li[data-ho *= "306호"] a{ height: 56px;}
+ /* 3층 */
+ .facility-booking.three-floor .map-wrapper .map-container .map-background { background-image: url(../images/map_01.png); } 
+ .facility-booking .map-wrapper .map-container .map-overlay li[data-ho = "308호"] a { width: 51px; /* height: 72px; */ } 
+ .facility-booking .map-wrapper .map-container .map-overlay li[data-ho = "306호"] a { width: 132px; } 
 
-.facility-booking .name {font-size: 13px;font-weight: 500;margin-right: 3px;} 
-.facility-booking .name-set {display: flex;align-items: center;line-height: 14px;} 
-.facility-booking .status {letter-spacing:-0.5px;position: absolute;right: 10px;top: -1px;color: #fff;font-size: 11px;padding: 2px 5px;} 
-.facility-booking .ho {font-size: 12px;color: #333;}
-.facility-booking .booked {background: #ef594e;} 
-.facility-booking .available {background: #16a6fd;} 
+ /* 4층 */
+ .facility-booking.four-floor .map-wrapper .map-container .map-background { background-image: url(../images/map_02.png); } 
+ .facility-booking .map-wrapper .map-container .map-overlay li[data-ho^="4"] a { width: 33px; } 
+ .facility-booking .map-wrapper .map-container .map-overlay li[data-ho = "401호"] a { width: 90px; } 
+ .facility-booking .map-wrapper .map-container .map-overlay li[data-ho = "406호"] a { width: 64px; } 
+ .facility-booking .map-wrapper .map-container .map-overlay li[data-ho = "407호"] a { width: 63px; } 
+ .facility-booking .map-wrapper .map-container .map-overlay li[data-ho = "408호"] a { width: 65px; } 
+ .facility-booking .map-wrapper .map-container .map-overlay li[data-ho = "409호"] a { width: 65px; } 
+ .facility-booking .map-wrapper .map-container .map-overlay li[data-ho = "410호"] a { width: 58px; } 
+ .facility-booking .map-wrapper .map-container .map-overlay li[data-ho = "412호"] a { width: 44px; } 
+ .facility-booking .map-wrapper .map-container .map-overlay li[data-ho = "415호"] a { width: 120px; } 
+ /* 5층 */
+ .facility-booking.fifth-floor .map-wrapper .map-container .map-background { background-image: url(../images/map_03.png); } 
+ .facility-booking .map-wrapper .map-container .map-overlay li[data-ho^="5"] a { width: 66px; } 
+ .facility-booking .map-wrapper .map-container .map-overlay li[data-ho = "509호"] a, 
+ .facility-booking .map-wrapper .map-container .map-overlay li[data-ho = "508호"] a, 
+ .facility-booking .map-wrapper .map-container .map-overlay li[data-ho = "507호"] a,
+ .facility-booking .map-wrapper .map-container .map-overlay li[data-ho = "506호"] a { width: 60px; } 
+ .facility-booking .map-wrapper .map-container .map-overlay li[data-ho ="513호"] a { width: 45px; } 
+ /* 6층 */
+ .facility-booking.six-floor .map-wrapper .map-container .map-background { background-image: url(../images/map_04.png); } 
+ .facility-booking .map-wrapper .map-container .map-overlay li[data-ho^="5"] a { width: 66px; } 
+
+
+
+
+
+
+
+
+
+.facility-booking .name { font-size: 13px; font-weight: 500; margin-right: 3px; } 
+.facility-booking .name-set { display: flex; align-items: center; line-height: 14px; } 
+.facility-booking .status { letter-spacing:-0.5px; position: absolute; right: 10px; top: -1px; color: #fff; font-size: 11px; padding: 2px 5px; } 
+.facility-booking .ho { font-size: 12px; color: #333; } 
+.facility-booking .booked { background: #ef594e; } 
+.facility-booking .available { background: #16a6fd; } 
 
 
 
 /* room-list를 복제 후 지도 이미지 위에 배치 */
 .facility-booking .map-wrapper .map-container .map-overlay { position:absolute; top:0; left:0; z-index:2; width:100%; height:100%; padding-left:0 !important; background-color:transparent; border:0; padding:0; } 
 .facility-booking .map-wrapper .map-container .map-overlay li { position: absolute; } 
-.facility-booking .map-wrapper .map-container .map-overlay li a {transition: all 0.3s;display: block;box-sizing: border-box;background: #ffffff63;width: 100px;height: 68px;position: relative;border: 2px solid transparent;} 
-.facility-booking .map-wrapper .map-container .map-overlay li .status {transform: translateX(-50%);top: auto;right: auto;left: 50%;font-size: 10px;bottom: -2px;word-break: keep-all;} 
-.facility-booking .map-wrapper .map-container .map-overlay li.active .status {  text-shadow:-1px 0 2px #000, 0 1px 2px #000, 1px 0 2px #000, 0 -1px 2px #000; } 
-.facility-booking .map-wrapper .map-container .map-overlay li.active a {border-color: #000000;} 
+.facility-booking .map-wrapper .map-container .map-overlay li a { transition: all 0.3s; display: block; box-sizing: border-box; background: #ffffff63; width: 120px; height: 74px; position: relative; border: 2px solid transparent; } 
+.facility-booking .map-wrapper .map-container .map-overlay li .status { position: absolute; width: 34px; height: 34px; background: transparent; font-size: 10px; text-align: center; padding: 7px 4px; line-height: 10px; box-sizing: border-box; transform: translateX(-50%); top: -30px; left: 50%; right: auto; z-index: 2; } 
+.facility-booking .map-wrapper .map-container .map-overlay li .status::before { content: ""; position: absolute; top: 0; left: 0; width: 34px; height: 34px; background: #16a6fd; border-radius: 50% 50% 45% 0; transform: rotate(-45deg); z-index: -1; box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); } 
+.facility-booking .map-wrapper .map-container .map-overlay li .status.booked::before { background: #ef594e; } 
+.facility-booking .map-wrapper .map-container .map-overlay li.active .status { text-shadow:-1px 0 2px #000, 0 1px 2px #000, 1px 0 2px #000, 0 -1px 2px #000; } 
+.facility-booking .map-wrapper .map-container .map-overlay li.active a { border-color: #000000; z-index: 1; } 
 .facility-booking .map-wrapper .map-container .map-overlay li .ho { display:none; } 
 .facility-booking .map-wrapper .map-container .map-overlay li .name { display:none; } 
 
-
-
 /* 시설 예약하기 */
 .facility-booking .map-with-list + .info_table { margin-top:30px; } 
-.info_table h3 { margin-bottom: 10px; } 
-.info_table .booked,.booking-details .booked {color: #ef594e;} 
-/* .info_table .available,.booking-details .available {color: #16a6fd;}  */
+
+.info_table .booked,.booking-details .booked { color: #ef594e; } 
+/* .info_table .available,.booking-details .available { color: #16a6fd; } */
 .info_table .tdStatus,.booking-details .tdStatus { background-color: transparent; } 
-.disabled-text { color: red;}
+.disabled-text { color: #c20000; font-weight:500; } 
 
 /* 시설 예약정보 */
 .info_table + .booking-details { margin-top:40px; } 
 
 
+/* td 데이터 없는 경우 */
+.basicTBL tbody td.no-data { padding: 20px 5px; } 
 
-/* 공통에 넣을거 */
-.btn-set { display: flex; align-items: center; }
-.btn-set.end {  justify-content: flex-end;} 

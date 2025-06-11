@@ -19,14 +19,53 @@ document.addEventListener("DOMContentLoaded", function () {
   // 위치 지정용 맵
   const positionMap = {
     //2층
-    "200호": { top: "104px", left: "175px" },
-    "201호": { top: "147px", left: "695px" },
-    "202호": { top: "229px", left: "666px" },
-    "203호": { top: "292px", left: "547px" },
+    "200호": { top: "133px", left: "78px" },
+    "201호": { top: "189px", left: "753px" },
+    "202호": { top: "298px", left: "717px" },
+    "203호": { top: "376px", left: "560px" },
     // 3층
-    "300호": { top: "128px", left: "254px" },
-    "308호": { top: "192px", left: "426px" },
-    "306호": { top: "263px", left: "433px" }
+    "300호": { top: "151px", left: "140px" },
+    "308호": { top: "258px", left: "401px" },
+    "306호": { top: "345px", left: "401px" },
+    // 4층
+    "415호": { top: "296px", left: "747px" },
+    "401호": { top: "386px", left: "778px" },
+    "406호": { top: "386px", left: "576px" },
+    "407호": { top: "386px", left: "454px" },
+    "408호": { top: "386px", left: "390px" },
+    "409호": { top: "386px", left: "326px" },
+    "402호": { top: "386px", left: "736px" },
+    "403호": { top: "386px", left: "704px" },
+    "404호": { top: "296px", left: "640px" },
+    "405호": { top: "386px", left: "641px" },
+    "413호": { top: "386px", left: "673px" },
+    "414호": { top: "296px", left: "674px" },
+    "410호": { top: "296px", left: "327px" },
+    "412호": { top: "296px", left: "410px" },
+    // 5층
+    "502호": { top: "384px", left: "769px" },
+    "503호": { top: "384px", left: "705px" },
+    "504호": { top: "384px", left: "640px" },
+    "505호": { top: "384px", left: "574px" },
+    "506호": { top: "384px", left: "460px" },
+    "507호": { top: "384px", left: "400px" },
+    "508호": { top: "384px", left: "341px" },
+    "509호": { top: "384px", left: "283px" },
+    "511호": { top: "292px", left: "324px" },
+    "513호": { top: "292px", left: "408px" },
+    "501호": { top: "384px", left: "834px" },
+        // 5층
+    "502호": { top: "384px", left: "769px" },
+    "503호": { top: "384px", left: "705px" },
+    "504호": { top: "384px", left: "640px" },
+    "505호": { top: "384px", left: "574px" },
+    "506호": { top: "384px", left: "460px" },
+    "507호": { top: "384px", left: "400px" },
+    "508호": { top: "384px", left: "341px" },
+    "509호": { top: "384px", left: "283px" },
+    "511호": { top: "292px", left: "324px" },
+    "513호": { top: "292px", left: "408px" },
+    "501호": { top: "384px", left: "834px" }
   };
 
 
@@ -93,8 +132,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-  const infoTable = document.querySelector(".info_table");
-  const tbody = document.getElementById("bookingInfoBody");
+
+  const tbody = document.getElementById("bookingTableBody");
 
   // 내용 업데이트
   tbody.innerHTML = `
@@ -111,8 +150,7 @@ document.addEventListener("DOMContentLoaded", function () {
     </tr>
   `;
 
-  // 표시하기
-  infoTable.style.display = "block";
+
 }
 
 });
