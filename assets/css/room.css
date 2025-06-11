@@ -13,11 +13,11 @@
 .facility-booking .room-list:not(.map-overlay) li a { padding: 8px 65px 8px 12px; display: block; } 
 .facility-booking .room-list:not(.map-overlay) li.active { background-color: #cce8be; border-color: #3BB000; } 
 .facility-booking .map-wrapper { height: 524px; border: 1px solid #D8DCE5; width: 100%; position: relative; display: flex; } 
-.facility-booking .map-wrapper .map-container { width: 100%; /* padding: 20px; */background: #fff; } 
+.facility-booking .map-wrapper .map-container { width: 100%; background: #fff; } 
 .facility-booking .map-wrapper .map-container .map-background { width:100%; height:100%; background:url(../images/map_00.png) center no-repeat; background-size: contain; transition:background-image .03s ease-in-out; } 
  /* 3층 */
  .facility-booking.three-floor .map-wrapper .map-container .map-background { background-image: url(../images/map_01.png); } 
- .facility-booking .map-wrapper .map-container .map-overlay li[data-ho = "308호"] a { width: 51px; /* height: 72px; */ } 
+ .facility-booking .map-wrapper .map-container .map-overlay li[data-ho = "308호"] a { width: 51px; } 
  .facility-booking .map-wrapper .map-container .map-overlay li[data-ho = "306호"] a { width: 132px; } 
 
  /* 4층 */
