@@ -2,6 +2,11 @@
 
 
 
+
+.subTit {font-family:var(--gmarket); font-size:17px; position:relative; padding-left:21px;}
+.subTit:before {content:""; width:8px; height:2px; display:inline-block; transform:rotate(-45deg); position:absolute; left:5px; top:8px; background:#088488;}
+
+
 /* select */
 .selectBox { height:46px; border-radius:10px; padding:0 25px 0 10px; border:1px solid var(--pointColor); font-size:15px; color:#454545;} 
 
@@ -64,6 +69,9 @@ ul.radioORcheck>li {}
 .status_red   { background:var(--Status-red);} 
 .status_blue  { background:var(--Status-blue);} 
 .status_black {color:var(--Status-black); background:#eceff6;} 
+
+.txt-red  {color:var(--Status-red) !important;}
+.txt-blue {color:var(--Status-blue) !important;}
 
 
 
@@ -158,9 +166,9 @@ header .gnb li.active a { color:var(--pointColor);}
 .loginWrap .idpwBox input {background:#fff; border:1px solid #e8e8e8; border-radius:10px; height:50px; box-sizing:border-box; padding:0 20px; font-size:16px; font-family:var(--gmarket);}
 .loginWrap .idpwBox input[type="email"] {}
 .loginWrap .idpwBox input[type="password"] {}
-.loginWrap .idpwBox button {font-family: var(--gmarket);}
+.loginWrap .idpwBox button {font-family:var(--gmarket);}
 .loginWrap .btnBox {display:flex; flex-wrap:wrap; margin-top:20px; border-top:1px solid #e8e8e8; padding-top:20px;}
-.loginWrap .btnBox .btn_basic_big {width:100%;font-family: var(--gmarket);}
+.loginWrap .btnBox .btn_basic_big {width:100%;font-family:var(--gmarket);}
 .loginWrap .btnBox a.btn_basic_big + a {text-align:right;}
 .loginWrap .btnBox a:not(.btn_basic_big) {position:relative; padding:15px 20px; width:50%; box-sizing:border-box; font-size:14px; color:#333;}
 .loginWrap .btnBox a:not(.btn_basic_big, :last-child):after {content:""; width:1px; height:14px; display:inline-block; background:#333; position:absolute; right:0; top:21px; opacity:0.5;}
@@ -194,8 +202,8 @@ header .gnb li.active a { color:var(--pointColor);}
 .joinWrap .termsList .allCheckBox .radioORcheck input[type="checkbox"] + label {font-size:16px; font-family:var(--gmarket);}
 .joinWrap .termsList > ul {width:100%; display:flex; flex-direction:column;}
 .joinWrap .termsList > ul > li  {display:flex; flex-direction:column; padding-bottom:40px;}
-.joinWrap .termsList > ul > li .termsNm {    font-family:var(--gmarket); margin-bottom:15px; font-size:17px; position:relative; padding-left:21px;}
-.joinWrap .termsList > ul > li .termsNm::before {    content:""; width:8px; height:2px; display:inline-block; transform:rotate(-45deg); position:absolute; left:5px; top:8px; background:#088488;}
+.joinWrap .termsList > ul > li .termsNm {font-family:var(--gmarket); margin-bottom:15px; font-size:17px; position:relative; padding-left:21px;}
+.joinWrap .termsList > ul > li .termsNm::before {content:""; width:8px; height:2px; display:inline-block; transform:rotate(-45deg); position:absolute; left:5px; top:8px; background:#088488;}
 .joinWrap .termsList > ul > li .termsCo  {width:100%; box-sizing:border-box; height:200px; overflow-y:scroll; font-size:13px; line-height:130%; color:#838383; border:1px solid #d7d7d7; padding:15px; border-radius:5px;}
 .joinWrap .termsList > ul > li .btnbox {display:flex; justify-content:space-between; padding-top:10px;}
 .joinWrap .termsList > ul > li .btnbox .radioORcheck input[type="checkbox"] + label { font-size:14px;}
@@ -219,29 +227,46 @@ header .gnb li.active a { color:var(--pointColor);}
 
 
 /* 3_회원정보 입력 */
-.necessary {display: inline-block; vertical-align: middle; width: 6px; height: 6px; overflow: hidden; text-indent: -999px; position: relative; border-radius: 100%; margin-right: 4px;}
-.necessary:before {content:"";width: 100%;height: 100%;display: inline-block;background: #e08f15;position: absolute;left: 0;top: 0;}
+.necessary {display:inline-block; vertical-align:middle; width:6px; height:6px; overflow:hidden; text-indent:-999px; position:relative; border-radius:100%; margin-right:4px;}
+.necessary:before {content:"";width:100%;height:100%;display:inline-block;background:#e08f15;position:absolute;left:0;top:0;}
 
 .join_usrInfoWrap {width:100%; max-width:var(--narrowBody); display:flex; flex-direction:column; margin:0px auto;}
 .join_usrInfoWrap .intro img {max-width:400px; margin-bottom:30px;}
 .join_usrInfoWrap .intro b:before {background:#febd13;}
-.join_usrInfoWrap .guideTxt {text-align:right;font-size: 14px;color: #838383;}
-.join_usrInfoWrap>ul {display:flex;flex-direction:column;border: 2px solid #d7d7d7;border-width: 2px 0;margin: 15px 0 30px;}
-.join_usrInfoWrap>ul>li {width:100%;padding-bottom: 20px;display: flex;}
-.join_usrInfoWrap>ul>li:first-child {padding-top:10px;}
-.join_usrInfoWrap>ul>li.separate-line {margin-top: 25px; border-top: 1px dashed #d7d7d7; padding-top: 40px;}
-.join_usrInfoWrap .leftTit {width: 150px;line-height: 38px;font-size: 14px;font-weight: 500;color: #333;padding-left: 10px;}
+.join_usrInfoWrap .guideTxt {text-align:right;font-size:14px;color:#838383;}
+.join_usrInfoWrap>ul {display:flex;flex-direction:column;border:2px solid #d7d7d7;border-width:2px 0;margin:15px 0 30px;}
+.join_usrInfoWrap>ul>li {width:100%;padding-bottom:20px;display:flex;}
+.join_usrInfoWrap>ul>li:first-child {padding-top:20px;}
+.join_usrInfoWrap>ul>li.separate-line {margin-top:25px; border-top:1px dashed #d7d7d7; padding-top:40px;}
+.join_usrInfoWrap .leftTit {width:150px;line-height:38px;font-size:14px;font-weight:500;color:#333;padding-left:10px;}
 .join_usrInfoWrap .leftTit label {width:100%;}
-.join_usrInfoWrap .leftTit .necessary {margin: -13px 0 0 5px;}
-.join_usrInfoWrap .txtfield {display:flex;flex-grow:1;flex-wrap: wrap;line-height: 37px;font-size: 14px;}
+.join_usrInfoWrap .leftTit .necessary {margin:-13px 0 0 5px;}
+.join_usrInfoWrap .txtfield {display:flex; flex-grow:1; width:50%; flex-wrap:wrap; line-height:37px;font-size:14px;}
 .join_usrInfoWrap .txtfield input,
-.join_usrInfoWrap .txtfield select {border: 1px solid #e8e8e8;border-radius: 10px;height: 38px;min-width: 200px;box-sizing: border-box;padding-left: 15px;color: #333;}
-.join_usrInfoWrap .txtfield input + a {margin-left:10px;padding: 0 15px;}
-.join_usrInfoWrap .txtfield .guideTxt {font-size:13px;width: 100%;text-align: left;padding-top: 10px;line-height: 100%;}
+.join_usrInfoWrap .txtfield select {border:1px solid #e8e8e8;border-radius:10px;height:38px;min-width:200px;box-sizing:border-box;padding-left:15px;color:#333;}
+.join_usrInfoWrap .txtfield input + a {margin-left:10px;padding:0 15px;}
+.join_usrInfoWrap .txtfield .guideTxt {font-size:13px;width:100%;text-align:left;padding-top:10px;line-height:100%;}
 .join_usrInfoWrap .txtfield .btw {padding:0 5px;}
 .join_usrInfoWrap .txtfield input[type="email"] ~ select {margin-left:10px;}
 
 .join_usrInfoWrap .txtfield input[type="number"]::-webkit-outer-spin-button,
-.join_usrInfoWrap .txtfield input[type="number"]::-webkit-inner-spin-button {-webkit-appearance: none; margin: 0;}
-.join_usrInfoWrap .txtfield input[type="number"] {-moz-appearance: textfield;}
+.join_usrInfoWrap .txtfield input[type="number"]::-webkit-inner-spin-button {-webkit-appearance:none; margin:0;}
+.join_usrInfoWrap .txtfield input[type="number"] {-moz-appearance:textfield;}
 
+
+
+
+/* 아이디 및 비밀번호 찾기 */
+.idpwFindWrap {display:flex; flex-direction:column;}
+.idpwFindWrap .tabBoxWrap {width:500px; margin-bottom:30px;}
+.idpwFindWrap .tabBoxWrap button {display:flex; width:50%; justify-content:center;}
+.idpwFindWrap .co {text-align:center; font-size:15px; color:#333;}
+.idpwFindWrap .join_usrInfoWrap>ul {border-width:1px 0; border-color:#e8e8e8;}
+.idpwFindWrap .join_usrInfoWrap .txtfield input {border-color:#d7d7d7; width:400px;}
+.idpwFindWrap .bottom_btnbox a {min-width:180px; margin:0px 5px;}
+
+.idpwFindWrap .resultBox {padding: 30px 20px;background:#fafafa;border:1px solid #efefef;border-radius:20px;margin: 15px 0 30px;text-align: center;line-height: 180%;}
+.idpwFindWrap .resultBox span {color: #333; font-size: 15px;}
+.idpwFindWrap .resultBox span.txt-blue {color:#333 !important;}
+.idpwFindWrap .resultBox div {margin-top: 10px; letter-spacing: 1px; font-weight: 500; color: #333;}
+.idpwFindWrap .resultBox div strong {color: var(--Status-blue); font-family: var(--gmarket); font-size: 18px;}
