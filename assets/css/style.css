@@ -223,6 +223,8 @@ header .gnb li.active a { color:var(--pointColor);}
 .necessary:before {content:"";width: 100%;height: 100%;display: inline-block;background: #e08f15;position: absolute;left: 0;top: 0;}
 
 .join_usrInfoWrap {width:100%; max-width:var(--narrowBody); display:flex; flex-direction:column; margin:0px auto;}
+.join_usrInfoWrap .intro img {max-width:400px; margin-bottom:30px;}
+.join_usrInfoWrap .intro b:before {background:#febd13;}
 .join_usrInfoWrap .guideTxt {text-align:right;font-size: 14px;color: #838383;}
 .join_usrInfoWrap>ul {display:flex;flex-direction:column;border: 2px solid #d7d7d7;border-width: 2px 0;margin: 15px 0 30px;}
 .join_usrInfoWrap>ul>li {width:100%;padding-bottom: 20px;display: flex;}
@@ -239,6 +241,7 @@ header .gnb li.active a { color:var(--pointColor);}
 .join_usrInfoWrap .txtfield .btw {padding:0 5px;}
 .join_usrInfoWrap .txtfield input[type="email"] ~ select {margin-left:10px;}
 
-
-
+.join_usrInfoWrap .txtfield input[type="number"]::-webkit-outer-spin-button,
+.join_usrInfoWrap .txtfield input[type="number"]::-webkit-inner-spin-button {-webkit-appearance: none; margin: 0;}
+.join_usrInfoWrap .txtfield input[type="number"] {-moz-appearance: textfield;}
 
