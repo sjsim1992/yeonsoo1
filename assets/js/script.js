@@ -1,6 +1,5 @@
 
 // 남여 배정변경
-
 const clickedCheckboxes = new Set();
 
 document.querySelectorAll('td input[type="checkbox"]').forEach(checkbox => {
@@ -39,26 +38,6 @@ document.querySelector('a.btn_save').addEventListener('click', () => {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // 호수 전체 선택
 document.getElementById('allselect').addEventListener('change', function() {
   const checkboxes = document.querySelectorAll('input[name="test00"]');
@@ -71,35 +50,19 @@ document.getElementById('allselect').addEventListener('change', function() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-const finselectChecked = new Set(); // 1단계 조건 체크용 (사실 boolean으로 써도 됨)
+//배정 시 숙소 예약완료
+const finselectChecked = new Set(); 
 let finselectIsChecked = false;
-const checkedBoxes = new Set(); // 2단계: 사용자가 체크한 test00 체크박스 저장
+const checkedBoxes = new Set(); 
 
-// 1단계 finselect 체크 변화 감지
 document.getElementById('finselect').addEventListener('change', function () {
   finselectIsChecked = this.checked;
 
-  // finselect 체크 해제 시 checkedBoxes 초기화
   if (!finselectIsChecked) {
     checkedBoxes.clear();
   }
 });
 
-// 2단계 test00 체크박스 클릭 감지
 document.querySelectorAll('input[name="test00"]').forEach(cb => {
   cb.addEventListener('change', function () {
     if (this.checked) {
@@ -110,14 +73,11 @@ document.querySelectorAll('input[name="test00"]').forEach(cb => {
   });
 });
 
-// 3단계 저장 버튼 클릭 시
 document.querySelector('a.btn_save').addEventListener('click', () => {
   if (!finselectIsChecked) {
-    // finselect 체크 안 되어 있으면 아무 작업도 안 함
     return;
   }
 
-  // finselect 체크 되어 있고, 사용자가 체크한 체크박스만 처리
   checkedBoxes.forEach(checkbox => {
     const td = checkbox.closest('td');
     if (td) {
@@ -127,6 +87,5 @@ document.querySelector('a.btn_save').addEventListener('click', () => {
     checkbox.checked = false;
   });
 
-  // 초기화
   checkedBoxes.clear();
 });

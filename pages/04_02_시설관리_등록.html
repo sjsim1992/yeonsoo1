@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+
+</head>
+
+    <body>
+
+        <div class="wrap">
+            <header>
+                <div class="logo"><img src="../assets/images/logo.png"></div>
+                <ul class="gnb">
+                    <li class="active"><a href="">연수관리</a></li>
+                    <li><a href="">시설관리</a></li>
+                    <li><a href="">시간표 관리</a></li>
+                    <li><a href="">회원관리</a></li>
+                    <li><a href="">개인정보 접속 이력 관리</a></li>
+                </ul>
+            </header>
+
+            <div class="container">
+                <div class="lnbWrap">
+                    <div class="pageTitle">시설 관리</div>
+                    <ul class="location">
+                        <li>home</li>
+                        <li>시설 관리</li>
+                        <li>등록</li>
+                    </ul>
+                </div>
+
+                
+                
+                
+                <!-- contents 안에 각 컨텐츠가 들어감 ! -->
+                <div class="contents">
+
+                    <div class="subTit mb10">시설 등록</div>
+                    <table class="leftTBL registTBL">
+                        <colgroup>
+                            <col style="width:180px;">
+                            <col>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th>대표이미지</th>
+                                <td>
+                                    <div class="imgFileUploader">
+                                        <div class="uploadBox">
+                                            <input type="text" id="fileNameDisplay" placeholder="파일을 선택해주세요" readonly>
+                                            <button class="btn_basic2_small" id="testsample">찾기</button>
+                                        </div>
+                                        <input type="file" id="realFileInput" accept="image/*">
+                                        <div class="previewBox" id="previewWrapper">
+                                            <img id="previewImage" src="" alt="미리보기">
+                                            <button class="btn_remove" id="removeBtn">삭제</button>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>건물명</th>
+                                <td>
+                                    <select>
+                                        <option>선택</option>
+                                        <option>선택</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>층</th>
+                                <td>
+                                    <select>
+                                        <option>선택</option>
+                                        <option>선택</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th>구분</th>
+                                <td>
+                                    <select>
+                                        <option>선택</option>
+                                        <option>선택</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th>실명</th>
+                                <td>
+                                    <select>
+                                        <option>선택</option>
+                                        <option>선택</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>수용인원</th>
+                                <td>
+                                    <input type="number"><span class="ml5">명</span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th>호수</th>
+                                <td>
+                                    <input type="number"><span class="ml5">호</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>사용여부</th>
+                                <td>
+                                    <ul class="radioORcheck">
+                                        <li>
+                                            <input type="radio" name="genderSelect" id="gender_male">
+                                            <label for="gender_male">사용</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="genderSelect" id="gender_female">
+                                            <label for="gender_female">미사용</label>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+
+
+
+
+
+
+
+
+
+                    <div class="txt-r mt30">
+                        <a href="#" class="btn_save">저장</a>
+                        <a href="#" class="btn_basic">목록</a>
+                    </div>
+
+
+
+
+
+
+
+                </div>
+                <!-- //contents END -->
+            </div>
+            <!-- //container END -->
+
+
+
+
+
+
+        </div>
+
+
+<script>
+    const realFileInput = document.getElementById('realFileInput');
+    const testsample = document.getElementById('testsample');
+    const fileNameDisplay = document.getElementById('fileNameDisplay');
+    const previewWrapper = document.getElementById('previewWrapper');
+    const previewImage = document.getElementById('previewImage');
+    const removeBtn = document.getElementById('removeBtn');
+
+    testsample.addEventListener('click', () => {
+      realFileInput.click();
+    });
+
+    realFileInput.addEventListener('change', function() {
+      const file = realFileInput.files[0];
+      if (file) {
+        fileNameDisplay.value = file.name;
+
+        if (file.type.startsWith('image/')) {
+          const reader = new FileReader();
+          reader.onload = function(e) {
+            previewImage.src = e.target.result;
+            previewWrapper.style.display = 'block';
+          };
+          reader.readAsDataURL(file);
+        }
+      }
+    });
+
+    removeBtn.addEventListener('click', function() {
+      realFileInput.value = '';
+      fileNameDisplay.value = '';
+      previewImage.src = '';
+      previewWrapper.style.display = 'none';
+    });
+</script>
+
+
+
+    
+
+    <script type="text/javascript" src="../assets/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="../assets/js/script.js"></script>
+    </body>
+</html>

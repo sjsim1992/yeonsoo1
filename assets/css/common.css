@@ -91,22 +91,21 @@
   --narrowBody: 800px;
 
  /** Color **/
- --fontColor: #333333; 
+ --fontColor:  #333333; 
  --pointColor: #346FEF;
 
- --Status-blue: #16a6fd; 
- --Status-green: #3BB000; 
+ --Status-blue:   #16a6fd; 
+ --Status-green:  #3BB000; 
  --Status-yellow: #FFD028; 
- --Status-red: #c20000; 
+ --Status-red:   #c20000; 
  --Status-black: #000000;
- --Grayscale-5: #2A2C3B; 
- --Grayscale-4: #3E4355; 
- --Grayscale-3: #8E97B4; 
- --Grayscale-2: #BCC2D6; 
- --Grayscale-1: #D2D7E5; 
+ --Grayscale-5: #666666; 
+ --Grayscale-4: #838383; 
+ --Grayscale-3: #d7d7d7; 
+ --Grayscale-2: #e8e8e8; 
+ --Grayscale-1: #f0f0f0; 
  --Grayscale-0: #FAFAFC;
 
- --Text-Disable: #D2D7E5; 
  --Text-White: #ffffff;
 
  /** Font Style **/
@@ -145,7 +144,7 @@ table {width:100%;border-collapse:collapse;border-spacing:0;}
 input,select,textarea,button {vertical-align:middle;font-size:100%}
 button {border:0 none;background-color:transparent;cursor:pointer}
 body{-webkit-text-size-adjust:none}
-input[type="text"],input[type="password"],input[type="submit"], textarea {-webkit-appearance:none;-webkit-border-radius:0;}
+input[type="text"],input[type="password"],input[type="submit"], textarea {-webkit-appearance:none;}
 input:checked[type="checkbox"] {-webkit-appearance:checkbox;}
 button,input[type="button"],input[type="submit"],input[type="reset"],input[type="file"] {-webkit-appearance:button;-webkit-border-radius:0}
 body,th,td,input,select,textarea,button {color:#000}
@@ -157,8 +156,12 @@ caption,legend {overflow:hidden;width:1px;height:1px;margin:-1px 0 0 -1px;font-s
 * html table {border-collapse:collapse}
 *+html table {border-collapse:collapse}
 
-
-
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-calendar-picker-indicator,
+input[type="month"]::-webkit-calendar-picker-indicator,
+input[type="week"]::-webkit-calendar-picker-indicator,
+input[type="datetime-local"]::-webkit-calendar-picker-indicator {display: none;}
+select {-webkit-appearance: none; -moz-appearance: none; appearance: none;}
 
 
 /*margin*/
@@ -184,9 +187,11 @@ caption,legend {overflow:hidden;width:1px;height:1px;margin:-1px 0 0 -1px;font-s
 .mb80 { margin-bottom:80px; }
 .mb100 { margin-bottom:100px; }
 
+.pb5 {padding-bottom:5px;}
+.ml5 {margin-left:5px; }
+.mr5 {margin-right:5px; }
 
 .wd100 { width:100% !important; }
-
 
 
 .txt-l { text-align:left; } 

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+</head>
+
+    <body>
+
+        <div class="wrap">
+            <header>
+                <div class="logo"><img src="../assets/images/logo.png"></div>
+                <ul class="gnb">
+                    <li><a href="">연수관리</a></li>
+                    <li class="active"><a href="../pages/04_01_시설관리_조회.html">시설관리</a></li>
+                    <li><a href="">시간표 관리</a></li>
+                    <li><a href="">회원관리</a></li>
+                    <li><a href="">개인정보 접속 이력 관리</a></li>
+                </ul>
+            </header>
+
+            <div class="container">
+                <div class="lnbWrap">
+                    <div class="pageTitle">시설 관리</div>
+                    <ul class="location">
+                        <li>home</li>
+                        <li>시설 관리</li>
+                        <li>조회</li>
+                    </ul>
+                </div>
+
+                
+                
+                
+                <!-- contents 안에 각 컨텐츠가 들어감 ! -->
+                <div class="contents">
+
+                    <div class="subTit mb10">시설 관리 조회</div>
+
+                    <div class="listSrchBox">
+                        <div class="">
+                            <label for="srch01">건물명</label>
+                            <select id="srch01">
+                                <option>미래관</option>
+                                <option>나래올관</option>
+                                <option>해오름관</option>
+                                <option>달맞이관</option>
+                            </select>
+                        </div>
+                        <div class="">
+                            <label for="srch02">층</label>
+                            <select id="srch02">
+                                <option>1층</option>
+                                <option>2층</option>
+                                <option>3층</option>
+                            </select>
+                        </div>
+                        <div class="">
+                            <label for="srch03">구분</label>
+                            <select id="srch03">
+                                <option>강당</option>
+                                <option>특별실</option>
+                                <option>강의실</option>
+                            </select>
+                        </div>
+                        <div class="">
+                            <label for="srch03">실명</label>
+                            <select id="srch03">
+                                <option>배움홀</option>
+                                <option>나눔홀</option>
+                                <option>아람홀</option>
+                            </select>
+                        </div>
+                        <div class="">
+                            <label for="srch03">사용여부</label>
+                            <select id="srch03">
+                                <option>사용</option>
+                                <option>미사용</option>
+                            </select>
+                        </div>
+                        <a href="#" class="btn_srch" title="검색">검색</a>
+                    </div>
+
+                    <table class="basicTBL mt30">
+                        <colgroup>
+                            <col style="width:50px;">
+                            <col style="width:60px;">
+                            <col>
+                            <col style="width:130px;">
+                            <col style="width:80px;">
+                            <col style="width:120px;">
+                            <col style="width:130px;">
+                            <col style="width:100px;">
+                            <col style="width:100px;">
+                            <col style="width:120px;">
+                            <col style="width:130px;">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>
+                                    <div class="radioORcheck">
+                                        <input type="checkbox" name="allselect" id="allselect">
+                                        <label for="allselect"></label>
+                                    </div>
+                                </th>
+                                <th>No</th>
+                                <th>대표 이미지</th>
+                                <th>건물명</th>
+                                <th>층</th>
+                                <th>구분</th>
+                                <th>실명</th>
+                                <th>수용인원</th>
+                                <th>호수</th>
+                                <th>사용여부</th>
+                                <th>관리</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="radioORcheck">
+                                        <input type="checkbox" name="allselect" id="allselect">
+                                        <label for="allselect"></label>
+                                    </div>
+                                </td>
+                                <td>1</td>
+                                <td>
+                                    <div class="thumnailBox">
+                                        <img src="https://cdn.newsq.kr/news/photo/202504/139562_140791_1031.jpg">
+                                    </div>
+                                </td>
+                                <td>미래관</td>
+                                <td>2층</td>
+                                <td>강당</td>
+                                <td>배움홀</td>
+                                <td>274명</td>
+                                <td>200</td>
+                                <td>
+                                    <span class="status_blue">사용</span>
+                                </td>
+                                <td>
+                                    <div class="btnbox">
+                                    <a href="#" class="setting btn_basic_small">설정</a>
+                                    <a href="#" class="delete btn_cancle_small">삭제</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="radioORcheck">
+                                        <input type="checkbox" name="allselect" id="allselect">
+                                        <label for="allselect"></label>
+                                    </div>
+                                </td>
+                                <td>2</td>
+                                <td>
+                                    <div class="thumnailBox">
+                                        <img src="https://cdn.mp-news.com/news/photo/202504/33387_14370_3846.png">
+                                    </div>
+                                </td>
+                                <td>나래울관</td>
+                                <td>2층</td>
+                                <td>체육관</td>
+                                <td>컴퓨터실</td>
+                                <td>274명</td>
+                                <td>200</td>
+                                <td>
+                                    <span class="status_red">미사용</span>
+                                </td>
+                                <td>
+                                    <a href="#" class="setting btn_basic_small">설정</a>
+                                    <a href="#" class="delete btn_cancle_small">삭제</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+
+
+
+
+
+                    <div class="txt-r mt30">
+                        <a href="#" class="btn_cancle fl">선택 삭제</a>
+                        <a href="../pages/04_02_시설관리_등록.html" class="btn_save">등록</a>
+                    </div>
+
+
+
+
+
+
+
+                </div>
+                <!-- //contents END -->
+            </div>
+            <!-- //container END -->
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+    
+
+    <script type="text/javascript" src="../assets/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="../assets/js/script.js"></script>
+    </body>
+</html>

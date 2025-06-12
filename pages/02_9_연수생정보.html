@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+</head>
+
+    <body>
+
+        <div class="wrap">
+            <header>
+                <div class="logo"><img src="../assets/images/logo.png"></div>
+                <ul class="gnb">
+                    <li class="active"><a href="">연수관리</a></li>
+                    <li><a href="">시설관리</a></li>
+                    <li><a href="">시간표 관리</a></li>
+                    <li><a href="">회원관리</a></li>
+                    <li><a href="">개인정보 접속 이력 관리</a></li>
+                </ul>
+            </header>
+
+            <div class="container">
+                <div class="lnbWrap">
+                    <div class="pageTitle">연수정보</div>
+                    <ul class="location">
+                        <li>home</li>
+                        <li>연수 관리</li>
+                        <li>연수등록</li>
+                    </ul>
+                    <ul class="lnb">
+                        <li><a href="../pages/02_1_연수기본정보.html">연수 기본정보</a></li>
+                        <li><a href="../pages/02_2_식당정보.html">식당 정보</a></li>
+                        <li><a href="">시설 예약 정보</a></li>
+                        <li><a href="">숙소 예약 정보</a></li>
+                        <li class="active"><a href="../pages/02_9_연수생정보.html">연수생 정보</a></li>
+                    </ul>
+                </div>
+
+                
+                
+                
+                <!-- contents 안에 각 컨텐츠가 들어감 ! -->
+                <div class="contents">
+
+                    <div class="subTit mb10">연수생 정보</div>
+
+                    <div class="listSrchBox">
+                        <div class="">
+                            <label for="srch01">장애여부</label>
+                            <select id="srch01">
+                                <option>일반/장애인</option>
+                                <option>일반</option>
+                                <option>장애인</option>
+                            </select>
+                        </div>
+                        <div class="">
+                            <label for="srch02">성별</label>
+                            <select id="srch02">
+                                <option>성별</option>
+                                <option>남성</option>
+                                <option>여성</option>
+                            </select>
+                        </div>
+                        <div class="">
+                            <label for="srch03">검색구분</label>
+                            <select id="srch03">
+                                <option>전체</option>
+                                <option>이름</option>
+                                <option>ID</option>
+                            </select>
+                        </div>
+                        <div class="">
+                            <label for="srch04">검색어</label>
+                            <input type="text" id="srch04" placeholder="검색어를 입력하세요">
+                        </div>
+                        <a href="#" class="btn_srch" title="검색">검색</a>
+                    </div>
+
+                    <div class="wd100 txt-r txt-grey">총 25명</div>
+                    <table class="basicTBL registTBL">
+                        <colgroup>
+                            <col style="width:60px;">
+                            <col style="width:170px;">
+                            <col>
+                            <col style="width:130px;">
+                            <col style="width:130px;">
+                            <col style="width:230px;">
+                            <col style="width:120px;">
+                            <col style="width:120px;">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>연번</th>
+                                <th>이름</th>
+                                <th>연수원 ID</th>
+                                <th>일반/장애</th>
+                                <th>성별</th>
+                                <th>소속기관</th>
+                                <th>숙소동</th>
+                                <th>호수</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>1</th>
+                                <td><input type="text" value="홍길동"></td>
+                                <td><input type="text" value="honggildong123"></td>
+                                <td>
+                                    <select>
+                                        <option>일반</option>
+                                        <option>장애인</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <select>
+                                        <option>남성</option>
+                                        <option>여성</option>
+                                    </select>
+                                </td>
+                                <td><input type="text" value="경기도교육청"></td>
+                                <td>
+                                    <span class="status_red">미예약</span>
+                                </td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <th>2</th>
+                                <td><input type="text" value="홍길동"></td>
+                                <td><input type="text" value="honggildong123"></td>
+                                <td>
+                                    <select>
+                                        <option>장애인</option>
+                                        <option>일반</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <select>
+                                        <option>여성</option>
+                                        <option>남성</option>
+                                    </select>
+                                </td>
+                                <td><input type="text" value="수원교육지원청"></td>
+                                <td>
+                                    달맞이관
+                                </td>
+                                <td>321호</td>
+                            </tr>
+                            <tr>
+                                <th>3</th>
+                                <td><input type="text" value="홍길동"></td>
+                                <td><input type="text" value="honggildong123"></td>
+                                <td>
+                                    <select>
+                                        <option>장애인</option>
+                                        <option>일반</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <select>
+                                        <option>여성</option>
+                                        <option>남성</option>
+                                    </select>
+                                </td>
+                                <td><input type="text" value="수원교육지원청"></td>
+                                <td>
+                                    해오름관
+                                </td>
+                                <td>-</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+
+
+
+
+
+                    <div class="txt-r mt30">
+                        <a href="#" class="btn_basic_green upload fl">엑셀 업로드</a>
+                        <a href="#" class="btn_basic_green download fl ml5">엑셀 양식 다운로드</a>
+                        
+                        <a href="#" class="btn_save">저장</a>
+                        <a href="#" class="btn_basic">목록</a>
+                    </div>
+
+
+
+
+
+
+
+                </div>
+                <!-- //contents END -->
+            </div>
+            <!-- //container END -->
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+    
+
+    <script type="text/javascript" src="../assets/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="../assets/js/script.js"></script>
+    </body>
+</html>
