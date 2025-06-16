@@ -16,17 +16,11 @@
 </head>
 
 <body>
-
-    공통 컴포넌트
+    <br><br>
+    <div class="subTit mb10">공통 컴포넌트</div>
     <br><br><br>
 
-    <select class="selectBox">
-        <option>2025-00-00</option>
-        <option>2025-00-01</option>
-    </select>
 
-
-    <br><br><br>
     <a href="#" class="btn_save_big">예약하기</a>
     <a href="#" class="btn_cancle_big">예약취소</a>
     
@@ -72,6 +66,10 @@
             <label for="finselect">체크박스2</label>
         </li>
     </ul>
+    <div class="radioORcheck">
+        <input type="checkbox" name="f33333" id="f33334">
+        <label for="f33334"></label>
+    </div>
 
     <br><br>
 
@@ -146,32 +144,56 @@
     <br><br><br>
 
 
-    <table class="leftTBL">
+    <table class="leftTBL registTBL">
         <colgroup>
-            <col style="width:150px;">
-            <col>
-            <col style="width:150px;">
+            <col style="width:180px;">
             <col>
         </colgroup>
         <tbody>
+            
             <tr>
-                <th>연수 명</th>
-                <td>2025학년도 중등 교직원 연수</td>
-                <th>구분</th>
-                <td>원내</td>
+                <th>건물명</th>
+                <td>
+                    <select>
+                        <option>선택</option>
+                        <option>선택</option>
+                    </select>
+                </td>
+            </tr>
+            
+
+            
+
+            
+            <tr>
+                <th>수용인원</th>
+                <td>
+                    <input type="number"><span class="ml5">명</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th>호수</th>
+                <td>
+                    <input type="number"><span class="ml5">호</span>
+                </td>
             </tr>
             <tr>
-                <th>연수 일정</th>
-                <td>2025-04-01 ~ 2025-04-02</td>
-                <th>연수 인원</th>
-                <td>100명</td>
+                <th>사용여부</th>
+                <td>
+                    <ul class="radioORcheck">
+                        <li>
+                            <input type="radio" name="genderSelect" id="gender_male">
+                            <label for="gender_male">사용</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="genderSelect" id="gender_female">
+                            <label for="gender_female">미사용</label>
+                        </li>
+                    </ul>
+                </td>
             </tr>
-            <tr>
-                <th>숙소</th>
-                <td></td>
-                <th>셔틀버스</th>
-                <td>입소 / 퇴소</td>
-            </tr>
+            
         </tbody>
     </table>
 
@@ -186,6 +208,17 @@
         <button type="button"><div>미래관 5층</div></button>
         <button type="button"><div>미래관 6층</div></button>
     </div>
+    <br><br><br>
+
+
+
+
+
+
+
+
+
+
 
 
 </body>
