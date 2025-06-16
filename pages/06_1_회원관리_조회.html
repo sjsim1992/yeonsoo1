@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+</head>
+
+    <body>
+
+        <div class="wrap">
+            <header>
+                <div class="logo"><img src="../assets/images/logo.png"></div>
+                <ul class="gnb">
+                    <li><a href="">연수관리</a></li>
+                    <li><a href="">시설관리</a></li>
+                    <li><a href="">시간표 관리</a></li>
+                    <li class="active"><a href="">회원관리</a></li>
+                    <li><a href="">개인정보 접속 이력 관리</a></li>
+                </ul>
+            </header>
+
+            <div class="container">
+                <div class="lnbWrap">
+                    <div class="pageTitle">회원관리</div>
+                    <ul class="location">
+                        <li>home</li>
+                        <li>회원관리</li>
+                    </ul>
+                </div>
+
+                
+                
+                
+                <!-- contents 안에 각 컨텐츠가 들어감 ! -->
+                <div class="contents">
+
+                    <div class="subTit mb10">회원 조회</div>
+
+                    <div class="listSrchBox">
+                        <div class="">
+                            <label for="srch01">회원유형</label>
+                            <select id="srch01">
+                                <option>전체</option>
+                                <option>관리자</option>
+                                <option>시설관리자</option>
+                                <option>연수설계자</option>
+                            </select>
+                        </div>
+                        <div class="">
+                            <label for="srch03">검색구분</label>
+                            <select id="srch03">
+                                <option>전체</option>
+                                <option>이름</option>
+                                <option>ID</option>
+                                <option>소속기관</option>
+                            </select>
+                        </div>
+                        <div class="">
+                            <label for="srch04">검색어</label>
+                            <input type="text" id="srch04" placeholder="검색어를 입력하세요">
+                        </div>
+                        <a href="#" class="btn_srch" title="검색">검색</a>
+                    </div>
+
+                    <div class="wd100 txt-r txt-grey">총 25명</div>
+                    <table class="basicTBL registTBL">
+                        <colgroup>
+                            <col style="width:50px;">
+                            <col style="width:50px;">
+                            <col style="width:100px;">
+                            <col style="width:110px;">
+                            <col style="width:140px;">
+                            <col style="width:150px;">
+                            <col>
+                            <col style="width:160px;">
+                            <col style="width:100px;">
+                            <col style="width:100px;">
+                            <col style="width:80px;">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>
+                                    <div class="radioORcheck">
+                                        <input type="checkbox" name="allselect" id="allselect">
+                                        <label for="allselect"></label>
+                                    </div>
+                                </th>
+                                <th>No</th>
+                                <th>회원유형</th>
+                                <th>이름</th>
+                                <th>아이디</th>
+                                <th>휴대폰</th>
+                                <th>이메일</th>
+                                <th>소속기관</th>
+                                <th>EPKI</th>
+                                <th>등록일</th>
+                                <th>관리</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="radioORcheck">
+                                        <input type="checkbox" name="select" id="select">
+                                        <label for="select"></label>
+                                    </div> 
+                                </td>
+                                <td>1</td>
+                                <td>관리자</td>
+                                <td>홍길동</td>
+                                <td>hongildong123</td>
+                                <td>010-1234-5678</td>
+                                <td>hong@naver.com</td>
+                                <td>수원교육지원청</td>
+                                <td>
+                                    <span class="status_blue">인증</span>
+                                </td>
+                                <td>2022-01-01</td>
+                                <td>
+                                    <a href="../pages/06_2_회원관리_설정.html" class="setting btn_basic_small">설정</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="radioORcheck">
+                                        <input type="checkbox" name="select" id="select">
+                                        <label for="select"></label>
+                                    </div> 
+                                </td>
+                                <td>1</td>
+                                <td>관리자</td>
+                                <td>홍길동</td>
+                                <td>hongildong123</td>
+                                <td>010-1234-5678</td>
+                                <td>hong@naver.com</td>
+                                <td>경기도교육청</td>
+                                <td>
+                                    <span class="status_red">미인증</span>
+                                </td>
+                                <td>2022-01-01</td>
+                                <td>
+                                    <a href="../pages/06_2_회원관리_설정.html" class="setting btn_basic_small">설정</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <ul class="pagingBtnBox">
+                        <li><a href="" class="prev first" title="첫 페이지로">첫 페이지로</a></li>
+                        <li><a href="" class="prev" title="이전 페이지로">이전 페이지로</a></li>
+                        <li><a href="" class="on">1</a></li>
+                        <li><a href="">2</a></li>
+                        <li><a href="">3</a></li>
+                        <li><a href="" class="next" title="다음 페이지로">다음 페이지로</a></li>
+                        <li><a href="" class="next last" title="마지막 페이지로">마지막 페이지로</a></li>
+                    </ul>
+
+
+
+
+
+
+                    <div class="txt-r mt30">
+                        <a href="#" class="btn_cancle fl">선택 삭제</a>
+                        
+                        <a href="../pages/06_2_회원관리_등록.html" class="btn_basic2">회원 등록</a>
+                    </div>
+
+
+
+
+
+
+
+                </div>
+                <!-- //contents END -->
+            </div>
+            <!-- //container END -->
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+    
+
+    <script type="text/javascript" src="../assets/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="../assets/js/script.js"></script>
+    </body>
+</html>

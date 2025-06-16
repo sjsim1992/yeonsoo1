@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+</head>
+
+    <body>
+
+        <div class="wrap">
+            <header>
+                <div class="logo"><img src="../assets/images/logo.png"></div>
+                <ul class="gnb">
+                    <li><a href="">연수관리</a></li>
+                    <li><a href="">시설관리</a></li>
+                    <li><a href="">시간표 관리</a></li>
+                    <li><a href="">회원관리</a></li>
+                    <li class="active"><a href="">개인정보 접속 이력 관리</a></li>
+                </ul>
+            </header>
+
+            <div class="container">
+                <div class="lnbWrap">
+                    <div class="pageTitle">개인정보 접속 이력 관리</div>
+                    <ul class="location">
+                        <li>home</li>
+                        <li>개인정보 접속 이력 관리</li>
+                    </ul>
+                </div>
+
+                
+                
+                
+                <!-- contents 안에 각 컨텐츠가 들어감 ! -->
+                <div class="contents">
+
+                    <div class="subTit mb10">개인정보 접속 이력 관리</div>
+
+                    <div class="listSrchBox">
+                        <div class="">
+                            <label for="srch01">회원유형</label>
+                            <select id="srch01">
+                                <option>전체</option>
+                                <option>관리자</option>
+                                <option>시설관리자</option>
+                                <option>연수설계자</option>
+                            </select>
+                        </div>
+                        <div class="">
+                            <label for="srch03">검색구분</label>
+                            <select id="srch03">
+                                <option>전체</option>
+                                <option>이름</option>
+                                <option>ID</option>
+                            </select>
+                        </div>
+                        <div class="">
+                            <label for="srch04">검색어</label>
+                            <input type="text" id="srch04" placeholder="검색어를 입력하세요">
+                        </div>
+                        <a href="#" class="btn_srch" title="검색">검색</a>
+                    </div>
+
+                    <div class="wd100 txt-r txt-grey">총 25명</div>
+                    <table class="basicTBL registTBL">
+                        <colgroup>
+                            <col style="width:50px;">
+                            <col style="width:200px;">
+                            <col style="width:110px;">
+                            <col style="width:130px;">
+                            <col style="width:160px;">
+                            <col>
+                            <col style="width:200px;">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>접속 일시</th>
+                                <th>회원유형</th>
+                                <th>이름</th>
+                                <th>아이디</th>
+                                <th>접속 경로</th>
+                                <th>접속 IP</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>2022-07-01 13:23:14</td>
+                                <td>관리자</td>
+                                <td>홍길동</td>
+                                <td>hongildong123</td>
+                                <td class="txt-l">홈 > 연수관리</td>
+                                <td>192.168.255.255</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>2022-07-01 13:23:14</td>
+                                <td>관리자</td>
+                                <td>홍길동</td>
+                                <td>hongildong123</td>
+                                <td class="txt-l">로그인</td>
+                                <td>192.168.255.255</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>2022-07-01 13:23:14</td>
+                                <td>관리자</td>
+                                <td>홍길동</td>
+                                <td>hongildong123</td>
+                                <td class="txt-l">홈>연수관리>시설예약정보</td>
+                                <td>192.168.255.255</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>2022-07-01 13:23:14</td>
+                                <td>관리자</td>
+                                <td>홍길동</td>
+                                <td>hongildong123</td>
+                                <td class="txt-l">홈>개인정보접속이력관리</td>
+                                <td>192.168.255.255</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>2022-07-01 13:23:14</td>
+                                <td>관리자</td>
+                                <td>홍길동</td>
+                                <td>hongildong123</td>
+                                <td class="txt-l">홈>연수관리>연수기본정보</td>
+                                <td>192.168.255.255</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+
+                    <ul class="pagingBtnBox">
+                        <li><a href="" class="prev first" title="첫 페이지로">첫 페이지로</a></li>
+                        <li><a href="" class="prev" title="이전 페이지로">이전 페이지로</a></li>
+                        <li><a href="" class="on">1</a></li>
+                        <li><a href="">2</a></li>
+                        <li><a href="">3</a></li>
+                        <li><a href="" class="next" title="다음 페이지로">다음 페이지로</a></li>
+                        <li><a href="" class="next last" title="마지막 페이지로">마지막 페이지로</a></li>
+                    </ul>
+
+
+
+
+
+
+
+                    <div class="txt-r mt30">
+                        <a href="../pages/06_2_회원관리_등록.html" class="btn_basic_green download">엑셀 다운로드</a>
+                    </div>
+
+
+
+
+
+
+
+                </div>
+                <!-- //contents END -->
+            </div>
+            <!-- //container END -->
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+    
+
+    <script type="text/javascript" src="../assets/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="../assets/js/script.js"></script>
+    </body>
+</html>

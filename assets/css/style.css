@@ -8,7 +8,8 @@
 
 
 /* input , select */
-input:not([type="radio"], [type="checkbox"]), select:not(.selectBox) {border:1px solid #d0d0d0;border-radius:10px;height:38px;min-width:200px;box-sizing:border-box;padding-left:15px;color:#333;}
+input:not([type="radio"], [type="checkbox"]), 
+select:not(.selectBox) {border:1px solid #d0d0d0; min-width:200px; border-radius:10px; height:38px; box-sizing:border-box; padding-left:15px; color:#333;}
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {-webkit-appearance:none; margin:0;}
 input[type="number"] {-moz-appearance:textfield;}
@@ -88,8 +89,10 @@ ul.radioORcheck>li {}
 .basicTBL thead th {background:#fafafa;padding:11px 5px;border:1px solid #ededea;border-bottom-color:#d7d7d7;border-width:1px 0;font-size:15px;font-weight:500;color:#333;} 
 .basicTBL tbody th {padding:15px 5px; font-size:15px; font-weight:500; color:#333; border-bottom:1px solid #ececec;} 
 .basicTBL tbody td {border:1px solid #f3f3f3; border-bottom:1px solid #ececec; font-size:14px; color:#333; text-align:center; padding:10px 5px;} 
+.basicTBL tbody td.txt-l {text-align:left;}
 .basicTBL tbody td input:not([type="radio"], [type="checkbox"]),
-.basicTBL tbody td select {min-width:70%;padding:0 10px;box-sizing:border-box;max-width:100%;}
+.basicTBL tbody td select:only-of-type {min-width:70%; padding:0 10px; box-sizing:border-box; max-width:100%;}
+.basicTBL tbody td select:not(:only-child) {min-width:100px;}
     .basicTBL.registTBL {table-layout:fixed;}
     .basicTBL.registTBL thead th {}
     .basicTBL.registTBL tbody th {font-weight:400;border-bottom:1px dashed #d7d7d7;}
@@ -104,6 +107,7 @@ ul.radioORcheck>li {}
 .leftTBL tbody tr:first-child td {border-top-style:solid;}
 .leftTBL tbody tr:last-child th,
 .leftTBL tbody tr:last-child td {border-bottom-style:solid;}
+.leftTBL tbody td .guideTxt {font-size:13px; width:100%; text-align:left; padding-top:10px; line-height:100%; display:block;}
     .leftTBL.registTBL {}
     .leftTBL.registTBL tbody th {width:180px; font-size:15px; font-family:'Noto Sans KR';}
     .leftTBL.registTBL tbody th .necessary {margin:-11px 0 0 5px;}
@@ -187,6 +191,27 @@ header .gnb li.active a { color:var(--pointColor);}
 .wrap ::-webkit-scrollbar-track { background:transparent;}
 .wrap ::-webkit-scrollbar-thumb { background:rgba(0,0,0,0.2);}
 .wrap ::-webkit-scrollbar-thumb:hover { background:#555;}
+
+
+
+/* pagingBtnBox */
+.pagingBtnBox {width:100%;display:flex;justify-content:center;align-items:center;margin-top: 15px;}
+.pagingBtnBox li {margin:0 3px;}
+.pagingBtnBox li a {font-size: 14px; cursor:pointer; width:25px; height:25px; display:inline-block;vertical-align: middle;text-align: center;line-height: 25px;/* border-radius: 5px; *//* background: #fafafa; *//* border: 1px solid #e7e7e7; */position: relative;}
+.pagingBtnBox li a.on {font-weight:600; font-family: var(--gmarket);color:#6576A2;line-height:30px;font-size: 12px;border-bottom: 2px solid #6576A2;}
+.pagingBtnBox li a:hover {text-decoration:underline; opacity:1 !important;}
+.pagingBtnBox li a.prev,
+.pagingBtnBox li a.next {text-indent:-999px;overflow:hidden;width: 16px;opacity:0.4;}
+.pagingBtnBox li a.prev:not(.first) {margin-right: 10px;}
+.pagingBtnBox li a.next:not(.last) {margin-left: 10px;}
+.pagingBtnBox li a.prev:before,
+.pagingBtnBox li a.next:before {font-family:FontAwesome;text-indent:0;position: absolute;left: 0;top: 0;width: 100%;height: 100%;}
+.pagingBtnBox li a.prev.first:before {content:"\f100";}
+.pagingBtnBox li a.prev:before {content:"\f104";}
+.pagingBtnBox li a.next:before {content:"\f105";}
+.pagingBtnBox li a.next.last:before {content:"\f101";}
+
+
 
 
 
