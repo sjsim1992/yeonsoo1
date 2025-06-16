@@ -6,21 +6,6 @@
 
 
 /* 숙소 배정 관리 */
-
-/* 상단 선택 박스 */
-.topBox {margin-top:30px; display:flex; justify-content:space-between; align-items:flex-end;}
-.topBox .selectArea {display:flex; flex-direction:column; flex-grow:1;}
-.topBox .selectArea>div {display:flex; align-items:flex-start;}
-.topBox .selectArea .leftTit {width:150px; font-family:'Gmarket Sans KR'; color:#333; padding:0px 0 0 15px; position:relative; line-height:40px;}
-.topBox .selectArea .leftTit:before {content:""; width:8px; height:2px; display:inline-block; background:#088488; transform:rotate(-45deg); position:absolute; left:2px; top:17px;}
-.topBox .selectArea .rightCo {width:50%; flex-grow:1; padding:0 10px; display:flex; flex-wrap:wrap; line-height:30px;}
-.topBox .selectArea .rightCo .date {font-family:'Gmarket Sans KR';font-weight:200;font-size:14px;line-height:40px;color: #000000;}
-.topBox .selectArea .rightCo .date.roomNm {color: var(--pointColor);font-weight: 500;font-size: 15px;}
-.topBox .selectArea .rightCo span {font-size: 14px;line-height: 35px;color: #5a5a5a;}
-.topBox .selectArea .rightCo span:only-of-type {margin-right:15px;}
-.topBox .selectArea .rightCo span:not(:only-of-type,:last-of-type):after {content: "";width: 10px;height: 1px;display: inline-block;background: #333;transform: rotate(-54deg);vertical-align: middle;margin: -3px 6px 0;opacity: 0.5;}
-.topBox .selectArea .rightCo .radioORcheck {width:100%; display:flex; gap:60px;}
-
 .topBox .beomrye {display:flex; gap:10px;}
 .topBox .beomrye li {display:flex; align-items:center;}
 .topBox .beomrye li .exp {font-size: 13px;color:#666;}
@@ -66,9 +51,13 @@
 .basicTBL[class *="bjTBL_"] td.bj_male.finish {border-color: #6895bc;}
 
 
+.basicTBL[class *="bjTBL_"] tbody th:nth-last-of-type(3):first-child,
 .basicTBL[class *="bjTBL_"] tbody th:nth-last-of-type(2),
 .basicTBL[class *="bjTBL_"] tbody th:nth-last-child(21):nth-child(2),
-.basicTBL[class *="bjTBL_"] tbody th:nth-last-child(21):nth-child(2) ~ td {border-top: 2px solid #d7d7d7;}
+.basicTBL[class *="bjTBL_"] tbody th:nth-last-child(21):nth-child(2) ~ td,
+.basicTBL[class *="bjTBL_"] tbody td:nth-child(3):last-child,
+.basicTBL[class *="bjTBL_"] tbody th:nth-child(2):nth-last-child(2) {border-top: 2px solid #d7d7d7;}
+.basicTBL[class *="bjTBL_"] tbody td:only-of-type {vertical-align:middle;}
 
 .basicTBL.bjTBL_admin {}
 .basicTBL.bjTBL_admin td.bj_disAble:before {content:""; width:100px; height:1px; display:inline-block; background:#333; transform:rotate(-50deg); position:absolute; left:-20px; top:28px; opacity:0.1;}
