@@ -80,7 +80,7 @@
 .basicTBL.bjTBL_usr_view {}
 .basicTBL.bjTBL_usr_view .bj_mine {border: 1px solid #ffda00;}
 .basicTBL.bjTBL_usr_view .bj_mine .stt {font-weight: 600;}
-.basicTBL.bjTBL_usr_view .bj_mine .stt:before {content: "\f058";font-family:FontAwesome;display: block;font-size: 18px;font-weight: 200;/* color: #fff; */}
+.basicTBL.bjTBL_usr_view .bj_mine .stt:before {content: "\f058";font-family:FontAwesome;display: block;font-size: 18px;font-weight: 200;}
 
 
 

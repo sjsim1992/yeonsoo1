@@ -93,6 +93,7 @@
  /** Color **/
  --fontColor:  #333333; 
  --pointColor: #346FEF;
+ --subtColor:  #6576A2;
 
  --Status-blue:   #16a6fd; 
  --Status-green:  #3BB000; 
@@ -104,20 +105,21 @@
  --Grayscale-3: #d7d7d7; 
  --Grayscale-2: #e8e8e8; 
  --Grayscale-1: #f0f0f0; 
- --Grayscale-0: #FAFAFC;
+ --Grayscale-0: #FAFAFA;
 
  --Text-White: #ffffff;
 
  /** Font Style **/
  /* Size */
- --fs40: 40px; 
- --fs32: 32px; 
  --fs24: 24px; 
  --fs20: 20px; 
+ --fs19: 19px; 
  --fs18: 18px; 
+ --fs17: 17px; 
  --fs16: 16px; 
+ --fs15: 15px; 
  --fs14: 14px; 
- --fs13: 12px; 
+ --fs13: 13px; 
  --fs12: 12px; 
  --fs11: 11px; 
  
