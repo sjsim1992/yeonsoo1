@@ -6,12 +6,12 @@
 .facility-booking {}
 .facility-booking .listSrchBox {margin:30px 0 15px;}
 
-.facility-booking .map-with-list {display:flex; gap:20px; padding:20px; box-sizing:border-box; background:#fafafa;} 
+.facility-booking .map-with-list {display:flex; gap:20px; padding:15px; box-sizing:border-box; background:#fafafa; border-radius:10px;} 
 .facility-booking .room-list {display:flex; gap:6px; flex-direction:column;} 
 .facility-booking .room-list:not(.map-overlay) li {border:1px solid #d8dce5; border-radius:10px; box-sizing:border-box; position:relative; width:163px; transition:all 0.3s; background:#fff; box-shadow:1px 0px 4px 1px rgb(0 0 0 / 3%);} 
 .facility-booking .room-list:not(.map-overlay) li a {padding:8px 65px 8px 12px; display:block;} 
 .facility-booking .room-list:not(.map-overlay) li.active {background-color:#cce8be; border-color:#3BB000;} 
-.facility-booking .map-wrapper {height:524px; border:1px solid #D8DCE5; width:100%; position:relative; display:flex;} 
+.facility-booking .map-wrapper {height:524px; border:1px dashed var(--Grayscale-3); width:100%; position:relative; display:flex; border-radius:10px; overflow:hidden;} 
 .facility-booking .map-wrapper .map-container {width:100%; background:#fff;} 
 .facility-booking .map-wrapper .map-container .map-background {width:100%; height:100%; background:url(../images/map_00.png) center no-repeat; background-size:contain; transition:background-image .03s ease-in-out; min-width:1015px;} 
     /* 3층 */
@@ -48,7 +48,7 @@
 
 .facility-booking .name {font-size:13px; font-weight:500; margin-right:3px;} 
 .facility-booking .name-set {display:flex; align-items:center; line-height:14px;} 
-.facility-booking .status {letter-spacing:-0.5px; position:absolute; right:10px; top:-1px; color:#fff; font-size:11px; padding:2px 5px;} 
+.facility-booking .status {letter-spacing:-0.5px; position:absolute; right:10px; top:-1px; color:#fff; font-size:11px; padding:2px 5px; border-radius:7px;} 
 .facility-booking .ho {font-size:12px; color:#333;} 
 .facility-booking .booked {background:#ef594e;} 
 .facility-booking .available {background:#16a6fd;} 
