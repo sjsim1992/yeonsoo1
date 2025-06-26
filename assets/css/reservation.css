@@ -14,8 +14,7 @@
 .topBox .beomrye li .label.bj_disAble:before {content:""; width:30px; height:1px; background:#c20000; display:inline-block; transform:rotate(-45deg); position:absolute; left:-4px; top:4px; opacity:0.7;}
 .topBox .beomrye li:first-child .label.bj_notYet {background: #eceff6;}
 
-.leftTBL+.topBox {margin-top: 10px;}
-.popup .topBox {background: #fafafa;border: 1px solid #e7e7e7;padding: 10px;box-sizing: border-box;border-radius: 10px;margin-bottom: 20px;}
+.leftTBL+.topBox {margin-top: 0;}
 
 
 /* 배정상태 공통 컬러 */
@@ -31,32 +30,27 @@
 
 .leftTBL tbody td .roomNm {color:var(--pointColor);}
 
-.basicTBL[class *="bjTBL_"] {margin-top: 25px;table-layout:fixed;}
-.basicTBL[class *="bjTBL_"] thead th:first-child {width:95px;}
+.basicTBL[class *="bjTBL_"] {margin-top:25px; table-layout:fixed; border-bottom:2px solid #d7d7d7;}
+.basicTBL[class *="bjTBL_"] thead th:first-child  {width:95px;}
 .basicTBL[class *="bjTBL_"] thead th:nth-child(2) {width:45px;}
-.basicTBL[class *="bjTBL_"] tbody th:first-child {border-right:1px solid #ececec;}
+.basicTBL[class *="bjTBL_"] tbody th:first-child  {border-right:1px solid #ececec;}
 .basicTBL[class *="bjTBL_"] td {vertical-align:top; position:relative; overflow:hidden;}
 .basicTBL[class *="bjTBL_"] td .no {font-family:'Gmarket Sans KR'; font-size:12px; letter-spacing:1px; opacity:0.6; display:block; margin-bottom:7px;}
 .basicTBL[class *="bjTBL_"] td input[type="checkbox"] + label:before {margin-right:0;}
-.basicTBL[class *="bjTBL_"] td.bj_finish {border-color: #6c6b6b;color: #fff;}
-.basicTBL[class *="bjTBL_"] td .stt {font-size: 12px; letter-spacing: -0.5px;}
-.basicTBL[class *="bjTBL_"] td .name {font-size: 13px; display: block;}
-.basicTBL[class *="bjTBL_"] td.bj_finish input[type="checkbox"] + label:before {border-color: #fff !important;}
+.basicTBL[class *="bjTBL_"] td.bj_finish {border-color:#6c6b6b; color:#fff;}
+.basicTBL[class *="bjTBL_"] td .stt {font-size:12px; letter-spacing:-0.5px;}
+.basicTBL[class *="bjTBL_"] td .name {font-size:13px; display: block;}
+.basicTBL[class *="bjTBL_"] td.bj_finish input[type="checkbox"] + label:before {border-color:#fff !important;}
 .basicTBL[class *="bjTBL_"] td.bj_finish input[type="checkbox"]:checked + label:before {border-color:#fff !important; color:#fff;}
-.basicTBL[class *="bjTBL_"] td.bj_female input[type="checkbox"] + label:before {border-color: #dfc2c2;}
+.basicTBL[class *="bjTBL_"] td.bj_female input[type="checkbox"] + label:before {border-color:#dfc2c2;}
 .basicTBL[class *="bjTBL_"] td.bj_female input[type="checkbox"]:checked + label:before {border-color:#a05c8b; color:#a05c8b;}
-.basicTBL[class *="bjTBL_"] td.bj_female {border-color: #f1cbdd;}
-.basicTBL[class *="bjTBL_"] td.bj_female.finish {border-color: #f386bb;}
-.basicTBL[class *="bjTBL_"] td.bj_male {border-color: #d1e3f3;}
-.basicTBL[class *="bjTBL_"] td.bj_male.finish {border-color: #6895bc;}
-
+.basicTBL[class *="bjTBL_"] td.bj_female        {border-color:#f1cbdd;}
+.basicTBL[class *="bjTBL_"] td.bj_female.finish {border-color:#f386bb;}
+.basicTBL[class *="bjTBL_"] td.bj_male          {border-color:#d1e3f3;}
+.basicTBL[class *="bjTBL_"] td.bj_male.finish   {border-color:#6895bc;}
 
 .basicTBL[class *="bjTBL_"] tbody th:nth-last-of-type(3):first-child,
-.basicTBL[class *="bjTBL_"] tbody th:nth-last-of-type(2),
-.basicTBL[class *="bjTBL_"] tbody th:nth-last-child(21):nth-child(2),
-.basicTBL[class *="bjTBL_"] tbody th:nth-last-child(21):nth-child(2) ~ td,
-.basicTBL[class *="bjTBL_"] tbody td:nth-child(3):last-child,
-.basicTBL[class *="bjTBL_"] tbody th:nth-child(2):nth-last-child(2) {border-top: 2px solid #d7d7d7;}
+.basicTBL[class *="bjTBL_"] tbody th:nth-last-of-type(2) {border-top: 2px solid #d7d7d7;}
 .basicTBL[class *="bjTBL_"] tbody td:only-of-type {vertical-align:middle;}
 
 .basicTBL.bjTBL_admin {}
@@ -70,19 +64,65 @@
 
 .basicTBL[class *="bjTBL_usr"] td.bj_disAble {background:#fff;}
 .basicTBL[class *="bjTBL_usr"] td.bj_disAble .no {opacity:0;}
-.basicTBL[class *="bjTBL_usr"] td.bj_notYet {background: #eceff6; padding-bottom: 33px; border-color: #e2e3e6;}
+.basicTBL[class *="bjTBL_usr"] td.bj_notYet  {background:#eceff6; padding-bottom:33px; border-color:#e2e3e6;}
 
-.basicTBL[class *="bjTBL_usr"] input[type="radio"] + label {padding-left: 0; position: absolute; margin: 1px 0 0 -10px;}
+.basicTBL[class *="bjTBL_usr"] input[type="radio"] + label {padding-left:0; position:absolute; margin:1px 0 0 -10px;}
 .basicTBL[class *="bjTBL_usr"] input[type="radio"] + label:before {}
 .basicTBL[class *="bjTBL_usr"] input[type="radio"]:checked + label:before {}
 .basicTBL[class *="bjTBL_usr"] input[type="radio"]:checked + label:after {}
 
 .basicTBL.bjTBL_usr_view {}
-.basicTBL.bjTBL_usr_view .bj_mine {border: 1px solid #ffda00;}
-.basicTBL.bjTBL_usr_view .bj_mine .stt {font-weight: 600;}
-.basicTBL.bjTBL_usr_view .bj_mine .stt:before {content: "\f058";font-family:FontAwesome;display: block;font-size: 18px;font-weight: 200;}
+.basicTBL.bjTBL_usr_view .bj_mine {border:1px solid #ffda00;}
+.basicTBL.bjTBL_usr_view .bj_mine .stt {font-weight:600;}
+.basicTBL.bjTBL_usr_view .bj_mine .stt:before {content:"\f058"; font-family:FontAwesome; display:block; font-size:18px; font-weight:200;}
+
+.tipText {font-size:14px; color:#828282;}
+
+
+    @media all and (min-width:991px){
+        .basicTBL[class *="bjTBL_"] tbody th:nth-last-child(21):nth-child(2),
+        .basicTBL[class *="bjTBL_"] tbody th:nth-last-child(21):nth-child(2) ~ td,
+        .basicTBL[class *="bjTBL_"] tbody td:nth-child(3):last-child,
+        .basicTBL[class *="bjTBL_"] tbody th:nth-child(2):nth-last-child(2) {border-top: 2px solid #d7d7d7;}
+    }
+    @media all and (max-width:990px){
+        .basicTBL[class *="bjTBL_usr"] {border-bottom:none;}
+        .basicTBL[class *="bjTBL_usr"] thead {display:none;}
+        .basicTBL[class *="bjTBL_usr"] tbody {display:flex; flex-direction: column;}
+        .basicTBL[class *="bjTBL_usr"] tbody tr {display:flex;flex-wrap: wrap;padding-left: 20px;}
+        .basicTBL[class *="bjTBL_usr"] tbody tr th {width:100%;}
+        .basicTBL[class *="bjTBL_usr"] tbody tr th:nth-last-child(22) {width: 100%;border-right: none;position: relative;text-align: left;font-family: 'Gmarket Sans KR';font-weight: 500;font-size: var(--fs16);padding-left: 20px;margin-left: -20px;border-bottom: none;padding-bottom: 5px;}
+        .basicTBL[class *="bjTBL_usr"] tbody tr th:nth-last-child(22):before {content:"";width: 8px;height: 2px;display: inline-block;background: #088488;transform: rotate(-45deg);position: absolute;left: 2px;top: 23px;}
+        .basicTBL[class *="bjTBL_usr"] tbody tr th:nth-last-child(21) {text-align: left;border-top-width: 0px !important;padding: 10px 20px;margin-left: -20px;border-bottom: none;border-right: none;}
+        .basicTBL[class *="bjTBL_usr"] tbody tr td {width: 10%; box-sizing: border-box; border-top: none;}
+        .basicTBL[class *="bjTBL_usr"] tbody tr td:nth-of-type(10n) {border-right:1px solid #f3f3f3 !important;}
+        .basicTBL[class *="bjTBL_usr"] td.bj_disAble {padding:0;border-top: 1px solid #ececec;}
+        .basicTBL[class *="bjTBL_usr"] tbody tr:not(:first-child) th:nth-last-child(22) {margin-top: 20px;border-top: none;}
+    }
+
+
+    @media all and (max-width:650px){
+        .basicTBL[class *="bjTBL_usr"] tbody tr td {width:20%;}
+        .basicTBL[class *="bjTBL_usr"] tbody tr td:nth-of-type(5n) {border-right:1px solid #f3f3f3 !important;}
+    }
 
 
 
 
 
+
+@media all and (min-width:991px){
+    .basicTBL tbody th a.floor {padding-bottom: 0px;border-bottom: 1px solid var(--pointColor);}
+    .basicTBL tbody th a.floor:hover {cursor:pointer;}
+    .basicTBL tbody th a.floor + .previewPOPUP {display:none;width: 580px;z-index: 9;position: absolute;background: #fff;padding: 20px 10px;border: 1px solid #d7d7d7;border-radius: 0 10px 10px 10px;margin: -18px 0 0 40px;box-shadow: 0px 2px 8px 1px rgba(0,0,0,0.1);}
+    .basicTBL tbody th a.floor + .previewPOPUP img {max-width:100%;}
+    .basicTBL tbody th a.floor:hover + .previewPOPUP,
+    .basicTBL tbody th a.floor:focus + .previewPOPUP {display:block;}
+}
+@media all and (max-width:990px){
+    .basicTBL tbody th a.floor {}
+    .basicTBL tbody th a.floor + .previewPOPUP {width: 100%; text-align: center; margin-top: -20px; padding-left: 50px; box-sizing: border-box;}
+    .basicTBL tbody th a.floor + .previewPOPUP img {max-width:100%;}
+
+    .pcOnly {display:none;}
+}

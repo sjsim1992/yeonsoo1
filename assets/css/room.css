@@ -14,8 +14,20 @@
 .facility-booking .map-wrapper {height:524px; border:1px dashed var(--Grayscale-3); width:100%; position:relative; display:flex; border-radius:10px; overflow:hidden;} 
 .facility-booking .map-wrapper .map-container {width:100%; background:#fff;} 
 .facility-booking .map-wrapper .map-container .map-background {width:100%; height:100%; background:url(../images/map_00.png) center no-repeat; background-size:contain; transition:background-image .03s ease-in-out; min-width:1015px;} 
+    
+    /*2층*/
+    .facility-booking .map-wrapper .map-container .map-overlay li[data-ho^="2"] a {width:100% !important; height:100%;}
+    .facility-booking .map-wrapper .map-container .map-overlay li[data-ho^="200호"] {width:216px !important; height:76px; transform:rotate(-30deg);}
+    .facility-booking .map-wrapper .map-container .map-overlay li[data-ho^="200호"] .status {transform:rotate(30deg);}
+    .facility-booking .map-wrapper .map-container .map-overlay li[data-ho^="201호"] {width:202px !important; height:84px;}
+    .facility-booking .map-wrapper .map-container .map-overlay li[data-ho^="202호"] {width:165px !important; height:76px;} 
+    .facility-booking .map-wrapper .map-container .map-overlay li[data-ho^="203호"] {width:130px !important; height:85px !important; transform:rotate(11deg);} 
+    .facility-booking .map-wrapper .map-container .map-overlay li[data-ho^="203호"] .status {transform:rotate(-11deg); left:20%; top:-16px;}
     /* 3층 */
     .facility-booking.three-floor .map-wrapper .map-container .map-background {background-image:url(../images/map_01.png);} 
+    .facility-booking .map-wrapper .map-container .map-overlay li[data-ho^="300호"] {width:192px !important; height:167px !important; transform:rotate(-30deg);}
+    .facility-booking .map-wrapper .map-container .map-overlay li[data-ho^="300호"] a {width:100% !important; height:100%;} 
+    .facility-booking .map-wrapper .map-container .map-overlay li[data-ho^="300호"] .status {transform:rotate(30deg);}
     .facility-booking .map-wrapper .map-container .map-overlay li[data-ho = "308호"] a {width:51px;} 
     .facility-booking .map-wrapper .map-container .map-overlay li[data-ho = "306호"] a {width:132px;} 
 
@@ -37,6 +49,7 @@
     .facility-booking .map-wrapper .map-container .map-overlay li[data-ho = "508호"] a, 
     .facility-booking .map-wrapper .map-container .map-overlay li[data-ho = "507호"] a,
     .facility-booking .map-wrapper .map-container .map-overlay li[data-ho = "506호"] a {width:60px;} 
+    .facility-booking .map-wrapper .map-container .map-overlay li[data-ho ="511호"] a {width:62px;} 
     .facility-booking .map-wrapper .map-container .map-overlay li[data-ho ="513호"] a {width:45px;} 
     /* 6층 */
     .facility-booking.six-floor .map-wrapper .map-container .map-background {background-image:url(../images/map_04.png);} 
@@ -73,7 +86,7 @@
 
 .facility-booking .info_table .booked,.booking-details .booked {color:#ef594e;} 
 /* .info_table .available,.booking-details .available {color:#16a6fd;} */
-.facility-booking .info_table .tdStatus,.booking-details .tdStatus {background-color:transparent;} 
+.booking-details .tdStatus {background-color:transparent;} 
 .facility-booking .disabled-text {color:#c20000; font-weight:500;} 
 
 /* 시설 예약정보 */
